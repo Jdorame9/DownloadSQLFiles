@@ -1,0 +1,1870 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'vss-web-extension-sdk',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of C:\Proyectos\miplugin\my-first-extension\package.json
+5 warn package.json my-first-extension@1.0.0 No description
+6 warn package.json my-first-extension@1.0.0 No repository field.
+7 warn package.json my-first-extension@1.0.0 No README data
+8 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\package.json
+9 silly cache add args [ 'vss-web-extension-sdk', null ]
+10 verbose cache add spec vss-web-extension-sdk
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'vss-web-extension-sdk',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'vss-web-extension-sdk',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: 'latest',
+11 silly cache add   type: 'tag' }
+12 silly addNamed vss-web-extension-sdk@latest
+13 verbose addNamed "latest" is being treated as a dist-tag for vss-web-extension-sdk
+14 info addNameTag [ 'vss-web-extension-sdk', 'latest' ]
+15 silly mapToRegistry name vss-web-extension-sdk
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry data Result {
+18 silly mapToRegistry   raw: 'vss-web-extension-sdk',
+18 silly mapToRegistry   scope: null,
+18 silly mapToRegistry   name: 'vss-web-extension-sdk',
+18 silly mapToRegistry   rawSpec: '',
+18 silly mapToRegistry   spec: 'latest',
+18 silly mapToRegistry   type: 'tag' }
+19 silly mapToRegistry uri https://registry.npmjs.org/vss-web-extension-sdk
+20 verbose addNameTag registry:https://registry.npmjs.org/vss-web-extension-sdk not in flight; fetching
+21 verbose request uri https://registry.npmjs.org/vss-web-extension-sdk
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 13:31:40
+24 verbose request id 5101acafcfd30329
+25 verbose etag W/"02fc97d55e9e4effb54d033c6e4a72b1"
+26 verbose lastModified Tue, 28 Jun 2022 18:47:23 GMT
+27 http request GET https://registry.npmjs.org/vss-web-extension-sdk
+28 http 304 https://registry.npmjs.org/vss-web-extension-sdk
+29 verbose headers { date: 'Thu, 12 Jan 2023 20:31:41 GMT',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'cf-ray': '7888a83e0a88e94a-DFW',
+29 verbose headers   age: '1',
+29 verbose headers   'cache-control': 'public, max-age=300',
+29 verbose headers   etag: '"02fc97d55e9e4effb54d033c6e4a72b1"',
+29 verbose headers   'last-modified': 'Tue, 28 Jun 2022 18:47:23 GMT',
+29 verbose headers   vary: 'Accept-Encoding',
+29 verbose headers   'cf-cache-status': 'HIT',
+29 verbose headers   'x-amz-replication-status': 'COMPLETED',
+29 verbose headers   server: 'cloudflare' }
+30 silly get cb [ 304,
+30 silly get   { date: 'Thu, 12 Jan 2023 20:31:41 GMT',
+30 silly get     connection: 'keep-alive',
+30 silly get     'cf-ray': '7888a83e0a88e94a-DFW',
+30 silly get     age: '1',
+30 silly get     'cache-control': 'public, max-age=300',
+30 silly get     etag: '"02fc97d55e9e4effb54d033c6e4a72b1"',
+30 silly get     'last-modified': 'Tue, 28 Jun 2022 18:47:23 GMT',
+30 silly get     vary: 'Accept-Encoding',
+30 silly get     'cf-cache-status': 'HIT',
+30 silly get     'x-amz-replication-status': 'COMPLETED',
+30 silly get     server: 'cloudflare' } ]
+31 verbose etag https://registry.npmjs.org/vss-web-extension-sdk from cache
+32 verbose get saving vss-web-extension-sdk to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\vss-web-extension-sdk\.cache.json
+33 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+34 silly addNameTag next cb for vss-web-extension-sdk with tag latest
+35 silly addNamed vss-web-extension-sdk@5.141.0
+36 verbose addNamed "5.141.0" is a plain semver version for vss-web-extension-sdk
+37 silly cache afterAdd vss-web-extension-sdk@5.141.0
+38 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\vss-web-extension-sdk\5.141.0\package\package.json not in flight; writing
+39 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+40 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\vss-web-extension-sdk\5.141.0\package\package.json written
+41 silly install resolved [ { name: 'vss-web-extension-sdk',
+41 silly install resolved     version: '5.141.0',
+41 silly install resolved     description: 'Visual Studio Team Services web extension JavaScript library and types.',
+41 silly install resolved     repository:
+41 silly install resolved      { type: 'git',
+41 silly install resolved        url: 'git+https://github.com/Microsoft/vss-web-extension-sdk.git' },
+41 silly install resolved     scripts: { build: 'tsc -p .', prepublish: 'npm run build' },
+41 silly install resolved     keywords: [ 'extensions', 'visual studio team services' ],
+41 silly install resolved     author: { name: 'Microsoft' },
+41 silly install resolved     license: 'MIT',
+41 silly install resolved     bugs: { url: 'https://github.com/Microsoft/vss-web-extension-sdk/issues' },
+41 silly install resolved     homepage: 'https://www.visualstudio.com/integrate/extensions/overview',
+41 silly install resolved     jspm: { main: 'lib/VSS.SDK', format: 'global' },
+41 silly install resolved     types: './typings/index.d.ts',
+41 silly install resolved     dependencies:
+41 silly install resolved      { '@types/jquery': '>=2.0.48',
+41 silly install resolved        '@types/jqueryui': '>=1.11.34',
+41 silly install resolved        '@types/knockout': '^3.4.49',
+41 silly install resolved        '@types/mousetrap': '~1.5.34',
+41 silly install resolved        '@types/q': '0.0.32',
+41 silly install resolved        '@types/react': '^15.6.12',
+41 silly install resolved        '@types/requirejs': '>=2.1.28' },
+41 silly install resolved     devDependencies: { typescript: '~2.5.3' },
+41 silly install resolved     gitHead: '813e4b6703b93722ad1245d2a8bc0ed8b2aa57ce',
+41 silly install resolved     _id: 'vss-web-extension-sdk@5.141.0',
+41 silly install resolved     _npmVersion: '6.4.0',
+41 silly install resolved     _nodeVersion: '10.6.0',
+41 silly install resolved     _npmUser: { name: 'vsalmopen', email: 'nugetvss@microsoft.com' },
+41 silly install resolved     dist:
+41 silly install resolved      { integrity: 'sha512-c/r/HWQh4hljKOSNQMiFoeICckKFfU/1nxDCVFhioDHOE8B0i5aJN9rrihGilgMXugzl8K5hBsZs42eFqd30AQ==',
+41 silly install resolved        shasum: '368b6fcaf5e7ab849f4fb98689b6694d78224ccf',
+41 silly install resolved        tarball: 'https://registry.npmjs.org/vss-web-extension-sdk/-/vss-web-extension-sdk-5.141.0.tgz',
+41 silly install resolved        fileCount: 16,
+41 silly install resolved        unpackedSize: 3187905,
+41 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbrnDKCRA9TVsSAnZWagAAjaEP/2O/ynJMm87hhcsQ7E+C\n0eZk127H8215z+nt2f2MGRXokMCDiLhjYbuCQ6K16QH2NwKW04ho65UZ7QFL\n1oOF2p2I1yL14QOVVljW77uHYzfVdsLhX67yggDIOhlUnmIezkwJgnuNIaPR\neOrPmQ/tl4Hict3D+VvtT9xbP6gN44ln+jlXeKq06ArdSMJ1g36yzY4eOO+V\nnrgn9uZhwsb4U3OWNuPeKpAVn/LipY5AkeT85qVmZKOREUg9bSANqFGP3/Os\noowBvUa03fsm0D211DXvORsaJZ4mS3PKEqy07TYN2MJR0QhPyNTYssd7ARc6\nlzFt+xbICm7zBmVGpFzg3hm6lhHmwZgLjto6VSgSq3pXsdEhb7BmYP1KWXCZ\nPB9tQG1o0lJHmsjqLyZMZxnqwBs2xuskhmJcp+TI9D0XcCrFI2VPtmzODqcM\neiLRbz1bvZFsvMLg1dzTmBxRJQaiXwoJm96rBG5HkXpjjC+E2v04bbEfXzy1\nMLw804WZSQANTnVWUjLTDZNaCW4qx/Z044Gabfx5rddecVBbEFqyPQWnZmen\nNBPz4s2HqdjX5cyrLAvrxRkwmhzWF56/Oz9UL5hJSIiSyRPNKatJznu46WXe\nHBa15g7ZtnFmVQIWEjg7H4c5rXWGTA5NzulaXGT21nJUvdcmpXyXEfSzIhoH\n2Cxw\r\n=eA7/\r\n-----END PGP SIGNATURE-----\r\n',
+41 silly install resolved        signatures: [Object] },
+41 silly install resolved     maintainers: [ [Object] ],
+41 silly install resolved     directories: {},
+41 silly install resolved     _npmOperationalInternal:
+41 silly install resolved      { host: 's3://npm-registry-packages',
+41 silly install resolved        tmp: 'tmp/vss-web-extension-sdk_5.141.0_1538158793293_0.5963960289012626' },
+41 silly install resolved     _hasShrinkwrap: false,
+41 silly install resolved     _shasum: '368b6fcaf5e7ab849f4fb98689b6694d78224ccf',
+41 silly install resolved     _resolved: 'https://registry.npmjs.org/vss-web-extension-sdk/-/vss-web-extension-sdk-5.141.0.tgz',
+41 silly install resolved     _from: 'vss-web-extension-sdk@latest',
+41 silly install resolved     readme: 'ERROR: No README data found!' } ]
+42 info install vss-web-extension-sdk@5.141.0 into C:\Proyectos\miplugin\my-first-extension
+43 info installOne vss-web-extension-sdk@5.141.0
+44 verbose installOne of vss-web-extension-sdk to C:\Proyectos\miplugin\my-first-extension not in flight; installing
+45 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+46 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\vss-web-extension-sdk-568447e7fd3d8948.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+47 silly install write writing vss-web-extension-sdk 5.141.0 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+48 verbose unbuild node_modules\vss-web-extension-sdk
+49 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk is being purged from base C:\Proyectos\miplugin\my-first-extension
+50 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+51 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\vss-web-extension-sdk\5.141.0\package.tgz
+52 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+53 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk is being purged
+54 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+55 silly gunzTarPerm modes [ '777', '666' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm extractEntry bower.json
+58 silly gunzTarPerm extractEntry LICENSE
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm extractEntry tsconfig.json
+61 silly gunzTarPerm extractEntry img/dependencies.png
+62 silly gunzTarPerm extractEntry lib/VSS.SDK.js
+63 silly gunzTarPerm extractEntry lib/VSS.SDK.min.js
+64 silly gunzTarPerm extractEntry typings/charts.d.ts
+65 silly gunzTarPerm extractEntry typings/index.d.ts
+66 silly gunzTarPerm extractEntry typings/notifications.d.ts
+67 silly gunzTarPerm extractEntry typings/rmo.contracts.d.ts
+68 silly gunzTarPerm extractEntry typings/rmo.d.ts
+69 silly gunzTarPerm extractEntry typings/tfs.d.ts
+70 silly gunzTarPerm extractEntry typings/vss.d.ts
+71 silly gunzTarPerm extractEntry typings/VSS.SDK.d.ts
+72 verbose write writing to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\package.json
+73 info preinstall vss-web-extension-sdk@5.141.0
+74 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\package.json
+75 silly prepareForInstallMany adding @types/jquery@>=2.0.48 from vss-web-extension-sdk dependencies
+76 silly prepareForInstallMany adding @types/jqueryui@>=1.11.34 from vss-web-extension-sdk dependencies
+77 silly prepareForInstallMany adding @types/knockout@^3.4.49 from vss-web-extension-sdk dependencies
+78 silly prepareForInstallMany adding @types/mousetrap@~1.5.34 from vss-web-extension-sdk dependencies
+79 silly prepareForInstallMany adding @types/q@0.0.32 from vss-web-extension-sdk dependencies
+80 silly prepareForInstallMany adding @types/react@^15.6.12 from vss-web-extension-sdk dependencies
+81 silly prepareForInstallMany adding @types/requirejs@>=2.1.28 from vss-web-extension-sdk dependencies
+82 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\package.json
+83 silly cache add args [ '@types/jquery@>=2.0.48', null ]
+84 verbose cache add spec @types/jquery@>=2.0.48
+85 silly cache add args [ '@types/jqueryui@>=1.11.34', null ]
+86 verbose cache add spec @types/jqueryui@>=1.11.34
+87 silly cache add parsed spec Result {
+87 silly cache add   raw: '@types/jquery@>=2.0.48',
+87 silly cache add   scope: '@types',
+87 silly cache add   name: '@types/jquery',
+87 silly cache add   rawSpec: '>=2.0.48',
+87 silly cache add   spec: '>=2.0.48',
+87 silly cache add   type: 'range' }
+88 silly addNamed @types/jquery@>=2.0.48
+89 verbose addNamed ">=2.0.48" is a valid semver range for @types/jquery
+90 silly addNameRange { name: '@types/jquery', range: '>=2.0.48', hasData: false }
+91 silly mapToRegistry name @types/jquery
+92 silly mapToRegistry scope (from package name) @types
+93 verbose mapToRegistry no registry URL found in name for scope @types
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: '@types/jquery',
+96 silly mapToRegistry   scope: '@types',
+96 silly mapToRegistry   name: '@types/jquery',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/@types%2fjquery
+98 verbose addNameRange registry:https://registry.npmjs.org/@types%2fjquery not in flight; fetching
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: '@types/jqueryui@>=1.11.34',
+99 silly cache add   scope: '@types',
+99 silly cache add   name: '@types/jqueryui',
+99 silly cache add   rawSpec: '>=1.11.34',
+99 silly cache add   spec: '>=1.11.34',
+99 silly cache add   type: 'range' }
+100 silly addNamed @types/jqueryui@>=1.11.34
+101 verbose addNamed ">=1.11.34" is a valid semver range for @types/jqueryui
+102 silly addNameRange { name: '@types/jqueryui', range: '>=1.11.34', hasData: false }
+103 silly mapToRegistry name @types/jqueryui
+104 silly mapToRegistry scope (from package name) @types
+105 verbose mapToRegistry no registry URL found in name for scope @types
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry data Result {
+108 silly mapToRegistry   raw: '@types/jqueryui',
+108 silly mapToRegistry   scope: '@types',
+108 silly mapToRegistry   name: '@types/jqueryui',
+108 silly mapToRegistry   rawSpec: '',
+108 silly mapToRegistry   spec: 'latest',
+108 silly mapToRegistry   type: 'tag' }
+109 silly mapToRegistry uri https://registry.npmjs.org/@types%2fjqueryui
+110 verbose addNameRange registry:https://registry.npmjs.org/@types%2fjqueryui not in flight; fetching
+111 silly cache add args [ '@types/knockout@^3.4.49', null ]
+112 verbose cache add spec @types/knockout@^3.4.49
+113 silly cache add parsed spec Result {
+113 silly cache add   raw: '@types/knockout@^3.4.49',
+113 silly cache add   scope: '@types',
+113 silly cache add   name: '@types/knockout',
+113 silly cache add   rawSpec: '^3.4.49',
+113 silly cache add   spec: '>=3.4.49 <4.0.0',
+113 silly cache add   type: 'range' }
+114 silly addNamed @types/knockout@>=3.4.49 <4.0.0
+115 verbose addNamed ">=3.4.49 <4.0.0" is a valid semver range for @types/knockout
+116 silly addNameRange { name: '@types/knockout',
+116 silly addNameRange   range: '>=3.4.49 <4.0.0',
+116 silly addNameRange   hasData: false }
+117 silly mapToRegistry name @types/knockout
+118 silly mapToRegistry scope (from package name) @types
+119 verbose mapToRegistry no registry URL found in name for scope @types
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry data Result {
+122 silly mapToRegistry   raw: '@types/knockout',
+122 silly mapToRegistry   scope: '@types',
+122 silly mapToRegistry   name: '@types/knockout',
+122 silly mapToRegistry   rawSpec: '',
+122 silly mapToRegistry   spec: 'latest',
+122 silly mapToRegistry   type: 'tag' }
+123 silly mapToRegistry uri https://registry.npmjs.org/@types%2fknockout
+124 verbose addNameRange registry:https://registry.npmjs.org/@types%2fknockout not in flight; fetching
+125 silly cache add args [ '@types/mousetrap@~1.5.34', null ]
+126 verbose cache add spec @types/mousetrap@~1.5.34
+127 silly cache add parsed spec Result {
+127 silly cache add   raw: '@types/mousetrap@~1.5.34',
+127 silly cache add   scope: '@types',
+127 silly cache add   name: '@types/mousetrap',
+127 silly cache add   rawSpec: '~1.5.34',
+127 silly cache add   spec: '>=1.5.34 <1.6.0',
+127 silly cache add   type: 'range' }
+128 silly addNamed @types/mousetrap@>=1.5.34 <1.6.0
+129 verbose addNamed ">=1.5.34 <1.6.0" is a valid semver range for @types/mousetrap
+130 silly addNameRange { name: '@types/mousetrap',
+130 silly addNameRange   range: '>=1.5.34 <1.6.0',
+130 silly addNameRange   hasData: false }
+131 silly mapToRegistry name @types/mousetrap
+132 silly mapToRegistry scope (from package name) @types
+133 verbose mapToRegistry no registry URL found in name for scope @types
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: '@types/mousetrap',
+136 silly mapToRegistry   scope: '@types',
+136 silly mapToRegistry   name: '@types/mousetrap',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/@types%2fmousetrap
+138 verbose addNameRange registry:https://registry.npmjs.org/@types%2fmousetrap not in flight; fetching
+139 silly cache add args [ '@types/q@0.0.32', null ]
+140 verbose cache add spec @types/q@0.0.32
+141 silly cache add parsed spec Result {
+141 silly cache add   raw: '@types/q@0.0.32',
+141 silly cache add   scope: '@types',
+141 silly cache add   name: '@types/q',
+141 silly cache add   rawSpec: '0.0.32',
+141 silly cache add   spec: '0.0.32',
+141 silly cache add   type: 'version' }
+142 silly addNamed @types/q@0.0.32
+143 verbose addNamed "0.0.32" is a plain semver version for @types/q
+144 silly mapToRegistry name @types/q
+145 silly mapToRegistry scope (from package name) @types
+146 verbose mapToRegistry no registry URL found in name for scope @types
+147 silly mapToRegistry using default registry
+148 silly mapToRegistry registry https://registry.npmjs.org/
+149 silly mapToRegistry data Result {
+149 silly mapToRegistry   raw: '@types/q',
+149 silly mapToRegistry   scope: '@types',
+149 silly mapToRegistry   name: '@types/q',
+149 silly mapToRegistry   rawSpec: '',
+149 silly mapToRegistry   spec: 'latest',
+149 silly mapToRegistry   type: 'tag' }
+150 silly mapToRegistry uri https://registry.npmjs.org/@types%2fq
+151 verbose addNameVersion registry:https://registry.npmjs.org/@types%2fq not in flight; fetching
+152 silly cache add args [ '@types/react@^15.6.12', null ]
+153 verbose cache add spec @types/react@^15.6.12
+154 silly cache add parsed spec Result {
+154 silly cache add   raw: '@types/react@^15.6.12',
+154 silly cache add   scope: '@types',
+154 silly cache add   name: '@types/react',
+154 silly cache add   rawSpec: '^15.6.12',
+154 silly cache add   spec: '>=15.6.12 <16.0.0',
+154 silly cache add   type: 'range' }
+155 silly addNamed @types/react@>=15.6.12 <16.0.0
+156 verbose addNamed ">=15.6.12 <16.0.0" is a valid semver range for @types/react
+157 silly addNameRange { name: '@types/react',
+157 silly addNameRange   range: '>=15.6.12 <16.0.0',
+157 silly addNameRange   hasData: false }
+158 silly mapToRegistry name @types/react
+159 silly mapToRegistry scope (from package name) @types
+160 verbose mapToRegistry no registry URL found in name for scope @types
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry data Result {
+163 silly mapToRegistry   raw: '@types/react',
+163 silly mapToRegistry   scope: '@types',
+163 silly mapToRegistry   name: '@types/react',
+163 silly mapToRegistry   rawSpec: '',
+163 silly mapToRegistry   spec: 'latest',
+163 silly mapToRegistry   type: 'tag' }
+164 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact
+165 verbose addNameRange registry:https://registry.npmjs.org/@types%2freact not in flight; fetching
+166 silly cache add args [ '@types/requirejs@>=2.1.28', null ]
+167 verbose cache add spec @types/requirejs@>=2.1.28
+168 silly cache add parsed spec Result {
+168 silly cache add   raw: '@types/requirejs@>=2.1.28',
+168 silly cache add   scope: '@types',
+168 silly cache add   name: '@types/requirejs',
+168 silly cache add   rawSpec: '>=2.1.28',
+168 silly cache add   spec: '>=2.1.28',
+168 silly cache add   type: 'range' }
+169 silly addNamed @types/requirejs@>=2.1.28
+170 verbose addNamed ">=2.1.28" is a valid semver range for @types/requirejs
+171 silly addNameRange { name: '@types/requirejs', range: '>=2.1.28', hasData: false }
+172 silly mapToRegistry name @types/requirejs
+173 silly mapToRegistry scope (from package name) @types
+174 verbose mapToRegistry no registry URL found in name for scope @types
+175 silly mapToRegistry using default registry
+176 silly mapToRegistry registry https://registry.npmjs.org/
+177 silly mapToRegistry data Result {
+177 silly mapToRegistry   raw: '@types/requirejs',
+177 silly mapToRegistry   scope: '@types',
+177 silly mapToRegistry   name: '@types/requirejs',
+177 silly mapToRegistry   rawSpec: '',
+177 silly mapToRegistry   spec: 'latest',
+177 silly mapToRegistry   type: 'tag' }
+178 silly mapToRegistry uri https://registry.npmjs.org/@types%2frequirejs
+179 verbose addNameRange registry:https://registry.npmjs.org/@types%2frequirejs not in flight; fetching
+180 verbose request uri https://registry.npmjs.org/@types%2fjqueryui
+181 verbose request no auth needed
+182 info attempt registry request try #1 at 13:31:41
+183 verbose etag W/"689814f10887cfac654ea300d30652fa"
+184 verbose lastModified Mon, 14 Nov 2022 08:27:38 GMT
+185 http request GET https://registry.npmjs.org/@types%2fjqueryui
+186 verbose request uri https://registry.npmjs.org/@types%2fmousetrap
+187 verbose request no auth needed
+188 info attempt registry request try #1 at 13:31:41
+189 verbose etag W/"d8d63ad786f8c275fb0afaf7f4ea2574"
+190 verbose lastModified Mon, 14 Nov 2022 22:03:34 GMT
+191 http request GET https://registry.npmjs.org/@types%2fmousetrap
+192 verbose request uri https://registry.npmjs.org/@types%2fknockout
+193 verbose request no auth needed
+194 info attempt registry request try #1 at 13:31:41
+195 verbose etag W/"d1af3a36a5d6fd71a2249848c9a78269"
+196 verbose lastModified Mon, 14 Nov 2022 08:27:51 GMT
+197 http request GET https://registry.npmjs.org/@types%2fknockout
+198 verbose request uri https://registry.npmjs.org/@types%2fjquery
+199 verbose request no auth needed
+200 info attempt registry request try #1 at 13:31:41
+201 verbose etag W/"6719ca863f9b9ad1eed9fcb43fb41711"
+202 verbose lastModified Sat, 31 Dec 2022 10:03:20 GMT
+203 http request GET https://registry.npmjs.org/@types%2fjquery
+204 verbose request uri https://registry.npmjs.org/@types%2fq
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 13:31:41
+207 verbose etag W/"8b0ee724db486b4fcc05de71e87a5880"
+208 verbose lastModified Mon, 14 Nov 2022 08:29:02 GMT
+209 http request GET https://registry.npmjs.org/@types%2fq
+210 verbose request uri https://registry.npmjs.org/@types%2freact
+211 verbose request no auth needed
+212 info attempt registry request try #1 at 13:31:41
+213 verbose etag W/"17cb6b08e68c1bd9f197891d6993d1b1"
+214 verbose lastModified Fri, 02 Dec 2022 14:33:24 GMT
+215 http request GET https://registry.npmjs.org/@types%2freact
+216 verbose request uri https://registry.npmjs.org/@types%2frequirejs
+217 verbose request no auth needed
+218 info attempt registry request try #1 at 13:31:41
+219 verbose etag W/"2454f3d8c7833ef736bd2f2c9b1abbfe"
+220 verbose lastModified Mon, 14 Nov 2022 08:29:19 GMT
+221 http request GET https://registry.npmjs.org/@types%2frequirejs
+222 http 304 https://registry.npmjs.org/@types%2fjqueryui
+223 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+223 verbose headers   connection: 'keep-alive',
+223 verbose headers   'cf-ray': '7888a8405f8ce94a-DFW',
+223 verbose headers   age: '130',
+223 verbose headers   'cache-control': 'public, max-age=300',
+223 verbose headers   etag: '"689814f10887cfac654ea300d30652fa"',
+223 verbose headers   'last-modified': 'Mon, 14 Nov 2022 08:27:38 GMT',
+223 verbose headers   vary: 'Accept-Encoding',
+223 verbose headers   'cf-cache-status': 'HIT',
+223 verbose headers   'x-amz-replication-status': 'COMPLETED',
+223 verbose headers   server: 'cloudflare' }
+224 silly get cb [ 304,
+224 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+224 silly get     connection: 'keep-alive',
+224 silly get     'cf-ray': '7888a8405f8ce94a-DFW',
+224 silly get     age: '130',
+224 silly get     'cache-control': 'public, max-age=300',
+224 silly get     etag: '"689814f10887cfac654ea300d30652fa"',
+224 silly get     'last-modified': 'Mon, 14 Nov 2022 08:27:38 GMT',
+224 silly get     vary: 'Accept-Encoding',
+224 silly get     'cf-cache-status': 'HIT',
+224 silly get     'x-amz-replication-status': 'COMPLETED',
+224 silly get     server: 'cloudflare' } ]
+225 verbose etag https://registry.npmjs.org/@types%2fjqueryui from cache
+226 verbose get saving @types/jqueryui to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252fjqueryui\.cache.json
+227 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+228 silly addNameRange number 2 { name: '@types/jqueryui', range: '>=1.11.34', hasData: true }
+229 silly addNameRange versions [ '@types/jqueryui',
+229 silly addNameRange   [ '1.9.8-alpha',
+229 silly addNameRange     '1.9.14-alpha',
+229 silly addNameRange     '1.9.15-alpha',
+229 silly addNameRange     '1.9.20-alpha',
+229 silly addNameRange     '1.9.21-alpha',
+229 silly addNameRange     '1.9.22-alpha',
+229 silly addNameRange     '1.9.23-alpha',
+229 silly addNameRange     '1.9.24-alpha',
+229 silly addNameRange     '1.9.25-alpha',
+229 silly addNameRange     '1.9.26-alpha',
+229 silly addNameRange     '1.9.27',
+229 silly addNameRange     '1.11.28',
+229 silly addNameRange     '1.11.29',
+229 silly addNameRange     '1.11.30',
+229 silly addNameRange     '1.11.31',
+229 silly addNameRange     '1.11.32',
+229 silly addNameRange     '1.11.33',
+229 silly addNameRange     '1.11.34',
+229 silly addNameRange     '1.11.35',
+229 silly addNameRange     '1.11.36',
+229 silly addNameRange     '1.11.37',
+229 silly addNameRange     '1.12.0',
+229 silly addNameRange     '1.12.1',
+229 silly addNameRange     '1.12.2',
+229 silly addNameRange     '1.12.3',
+229 silly addNameRange     '1.12.4',
+229 silly addNameRange     '1.12.5',
+229 silly addNameRange     '1.12.6',
+229 silly addNameRange     '1.12.7',
+229 silly addNameRange     '1.12.8',
+229 silly addNameRange     '1.12.9',
+229 silly addNameRange     '1.12.10',
+229 silly addNameRange     '1.12.11',
+229 silly addNameRange     '1.12.12',
+229 silly addNameRange     '1.12.13',
+229 silly addNameRange     '1.12.14',
+229 silly addNameRange     '1.12.15',
+229 silly addNameRange     '1.12.16' ] ]
+230 silly addNamed @types/jqueryui@1.12.16
+231 verbose addNamed "1.12.16" is a plain semver version for @types/jqueryui
+232 silly cache afterAdd @types/jqueryui@1.12.16
+233 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jqueryui\1.12.16\package\package.json not in flight; writing
+234 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+235 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jqueryui\1.12.16\package\package.json written
+236 http 304 https://registry.npmjs.org/@types%2freact
+237 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+237 verbose headers   connection: 'keep-alive',
+237 verbose headers   'cf-ray': '7888a8411910e77d-DFW',
+237 verbose headers   age: '185',
+237 verbose headers   'cache-control': 'public, max-age=300',
+237 verbose headers   etag: '"17cb6b08e68c1bd9f197891d6993d1b1"',
+237 verbose headers   'last-modified': 'Fri, 02 Dec 2022 14:33:24 GMT',
+237 verbose headers   vary: 'Accept-Encoding',
+237 verbose headers   'cf-cache-status': 'HIT',
+237 verbose headers   'x-amz-replication-status': 'COMPLETED',
+237 verbose headers   server: 'cloudflare' }
+238 silly get cb [ 304,
+238 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+238 silly get     connection: 'keep-alive',
+238 silly get     'cf-ray': '7888a8411910e77d-DFW',
+238 silly get     age: '185',
+238 silly get     'cache-control': 'public, max-age=300',
+238 silly get     etag: '"17cb6b08e68c1bd9f197891d6993d1b1"',
+238 silly get     'last-modified': 'Fri, 02 Dec 2022 14:33:24 GMT',
+238 silly get     vary: 'Accept-Encoding',
+238 silly get     'cf-cache-status': 'HIT',
+238 silly get     'x-amz-replication-status': 'COMPLETED',
+238 silly get     server: 'cloudflare' } ]
+239 verbose etag https://registry.npmjs.org/@types%2freact from cache
+240 verbose get saving @types/react to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252freact\.cache.json
+241 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+242 http 304 https://registry.npmjs.org/@types%2fjquery
+243 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+243 verbose headers   connection: 'keep-alive',
+243 verbose headers   'cf-ray': '7888a8411869e909-DFW',
+243 verbose headers   age: '131',
+243 verbose headers   'cache-control': 'public, max-age=300',
+243 verbose headers   etag: '"6719ca863f9b9ad1eed9fcb43fb41711"',
+243 verbose headers   'last-modified': 'Sat, 31 Dec 2022 10:03:20 GMT',
+243 verbose headers   vary: 'Accept-Encoding',
+243 verbose headers   'cf-cache-status': 'HIT',
+243 verbose headers   'x-amz-replication-status': 'PENDING',
+243 verbose headers   server: 'cloudflare' }
+244 silly get cb [ 304,
+244 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+244 silly get     connection: 'keep-alive',
+244 silly get     'cf-ray': '7888a8411869e909-DFW',
+244 silly get     age: '131',
+244 silly get     'cache-control': 'public, max-age=300',
+244 silly get     etag: '"6719ca863f9b9ad1eed9fcb43fb41711"',
+244 silly get     'last-modified': 'Sat, 31 Dec 2022 10:03:20 GMT',
+244 silly get     vary: 'Accept-Encoding',
+244 silly get     'cf-cache-status': 'HIT',
+244 silly get     'x-amz-replication-status': 'PENDING',
+244 silly get     server: 'cloudflare' } ]
+245 verbose etag https://registry.npmjs.org/@types%2fjquery from cache
+246 verbose get saving @types/jquery to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252fjquery\.cache.json
+247 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+248 http 304 https://registry.npmjs.org/@types%2fq
+249 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+249 verbose headers   connection: 'keep-alive',
+249 verbose headers   'cf-ray': '7888a8411fc90bfb-DFW',
+249 verbose headers   age: '274',
+249 verbose headers   'cache-control': 'public, max-age=300',
+249 verbose headers   etag: '"8b0ee724db486b4fcc05de71e87a5880"',
+249 verbose headers   'last-modified': 'Mon, 14 Nov 2022 08:29:02 GMT',
+249 verbose headers   vary: 'Accept-Encoding',
+249 verbose headers   'cf-cache-status': 'HIT',
+249 verbose headers   'x-amz-replication-status': 'PENDING',
+249 verbose headers   server: 'cloudflare' }
+250 silly get cb [ 304,
+250 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+250 silly get     connection: 'keep-alive',
+250 silly get     'cf-ray': '7888a8411fc90bfb-DFW',
+250 silly get     age: '274',
+250 silly get     'cache-control': 'public, max-age=300',
+250 silly get     etag: '"8b0ee724db486b4fcc05de71e87a5880"',
+250 silly get     'last-modified': 'Mon, 14 Nov 2022 08:29:02 GMT',
+250 silly get     vary: 'Accept-Encoding',
+250 silly get     'cf-cache-status': 'HIT',
+250 silly get     'x-amz-replication-status': 'PENDING',
+250 silly get     server: 'cloudflare' } ]
+251 verbose etag https://registry.npmjs.org/@types%2fq from cache
+252 verbose get saving @types/q to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252fq\.cache.json
+253 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+254 http 304 https://registry.npmjs.org/@types%2fmousetrap
+255 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+255 verbose headers   connection: 'keep-alive',
+255 verbose headers   'cf-ray': '7888a840f860e98b-DFW',
+255 verbose headers   age: '122',
+255 verbose headers   'cache-control': 'public, max-age=300',
+255 verbose headers   etag: '"d8d63ad786f8c275fb0afaf7f4ea2574"',
+255 verbose headers   'last-modified': 'Mon, 14 Nov 2022 22:03:34 GMT',
+255 verbose headers   vary: 'Accept-Encoding',
+255 verbose headers   'cf-cache-status': 'HIT',
+255 verbose headers   'x-amz-replication-status': 'COMPLETED',
+255 verbose headers   server: 'cloudflare' }
+256 silly get cb [ 304,
+256 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+256 silly get     connection: 'keep-alive',
+256 silly get     'cf-ray': '7888a840f860e98b-DFW',
+256 silly get     age: '122',
+256 silly get     'cache-control': 'public, max-age=300',
+256 silly get     etag: '"d8d63ad786f8c275fb0afaf7f4ea2574"',
+256 silly get     'last-modified': 'Mon, 14 Nov 2022 22:03:34 GMT',
+256 silly get     vary: 'Accept-Encoding',
+256 silly get     'cf-cache-status': 'HIT',
+256 silly get     'x-amz-replication-status': 'COMPLETED',
+256 silly get     server: 'cloudflare' } ]
+257 verbose etag https://registry.npmjs.org/@types%2fmousetrap from cache
+258 verbose get saving @types/mousetrap to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252fmousetrap\.cache.json
+259 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+260 http 304 https://registry.npmjs.org/@types%2frequirejs
+261 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+261 verbose headers   connection: 'keep-alive',
+261 verbose headers   'cf-ray': '7888a841184aaa70-DFW',
+261 verbose headers   age: '35',
+261 verbose headers   'cache-control': 'public, max-age=300',
+261 verbose headers   etag: '"2454f3d8c7833ef736bd2f2c9b1abbfe"',
+261 verbose headers   'last-modified': 'Mon, 14 Nov 2022 08:29:19 GMT',
+261 verbose headers   vary: 'Accept-Encoding',
+261 verbose headers   'cf-cache-status': 'HIT',
+261 verbose headers   'x-amz-replication-status': 'COMPLETED',
+261 verbose headers   server: 'cloudflare' }
+262 silly get cb [ 304,
+262 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+262 silly get     connection: 'keep-alive',
+262 silly get     'cf-ray': '7888a841184aaa70-DFW',
+262 silly get     age: '35',
+262 silly get     'cache-control': 'public, max-age=300',
+262 silly get     etag: '"2454f3d8c7833ef736bd2f2c9b1abbfe"',
+262 silly get     'last-modified': 'Mon, 14 Nov 2022 08:29:19 GMT',
+262 silly get     vary: 'Accept-Encoding',
+262 silly get     'cf-cache-status': 'HIT',
+262 silly get     'x-amz-replication-status': 'COMPLETED',
+262 silly get     server: 'cloudflare' } ]
+263 verbose etag https://registry.npmjs.org/@types%2frequirejs from cache
+264 verbose get saving @types/requirejs to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252frequirejs\.cache.json
+265 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+266 silly addNameRange number 2 { name: '@types/react',
+266 silly addNameRange   range: '>=15.6.12 <16.0.0',
+266 silly addNameRange   hasData: true }
+267 silly addNameRange versions [ '@types/react',
+267 silly addNameRange   [ '0.14.14-alpha',
+267 silly addNameRange     '0.14.15-alpha',
+267 silly addNameRange     '0.14.20-alpha',
+267 silly addNameRange     '0.14.21-alpha',
+267 silly addNameRange     '0.14.22-alpha',
+267 silly addNameRange     '0.14.23-alpha',
+267 silly addNameRange     '0.14.24-alpha',
+267 silly addNameRange     '0.14.25-alpha',
+267 silly addNameRange     '0.14.26-alpha',
+267 silly addNameRange     '0.14.27',
+267 silly addNameRange     '0.14.28',
+267 silly addNameRange     '0.14.29',
+267 silly addNameRange     '0.14.30',
+267 silly addNameRange     '0.14.31',
+267 silly addNameRange     '0.14.32',
+267 silly addNameRange     '0.14.33',
+267 silly addNameRange     '0.14.34',
+267 silly addNameRange     '0.14.35',
+267 silly addNameRange     '0.14.36',
+267 silly addNameRange     '0.14.37',
+267 silly addNameRange     '0.14.38',
+267 silly addNameRange     '0.14.39',
+267 silly addNameRange     '0.14.40',
+267 silly addNameRange     '0.14.41',
+267 silly addNameRange     '0.14.42',
+267 silly addNameRange     '0.14.43',
+267 silly addNameRange     '0.14.44',
+267 silly addNameRange     '0.14.45',
+267 silly addNameRange     '0.14.46',
+267 silly addNameRange     '0.14.47',
+267 silly addNameRange     '0.14.48',
+267 silly addNameRange     '0.14.49',
+267 silly addNameRange     '0.14.50',
+267 silly addNameRange     '0.14.51',
+267 silly addNameRange     '0.14.52',
+267 silly addNameRange     '0.14.53',
+267 silly addNameRange     '0.14.54',
+267 silly addNameRange     '0.14.55',
+267 silly addNameRange     '0.14.56',
+267 silly addNameRange     '0.14.57',
+267 silly addNameRange     '0.0.0',
+267 silly addNameRange     '15.0.0',
+267 silly addNameRange     '15.0.1',
+267 silly addNameRange     '15.0.2',
+267 silly addNameRange     '15.0.3',
+267 silly addNameRange     '15.0.4',
+267 silly addNameRange     '15.0.5',
+267 silly addNameRange     '15.0.6',
+267 silly addNameRange     '15.0.7',
+267 silly addNameRange     '15.0.8',
+267 silly addNameRange     '15.0.9',
+267 silly addNameRange     '15.0.10',
+267 silly addNameRange     '15.0.11',
+267 silly addNameRange     '15.0.12',
+267 silly addNameRange     '15.0.13',
+267 silly addNameRange     '15.0.14',
+267 silly addNameRange     '15.0.15',
+267 silly addNameRange     '15.0.16',
+267 silly addNameRange     '15.0.17',
+267 silly addNameRange     '15.0.18',
+267 silly addNameRange     '15.0.19',
+267 silly addNameRange     '15.0.20',
+267 silly addNameRange     '15.0.21',
+267 silly addNameRange     '15.0.22',
+267 silly addNameRange     '15.0.23',
+267 silly addNameRange     '15.0.24',
+267 silly addNameRange     '15.0.25',
+267 silly addNameRange     '15.0.26',
+267 silly addNameRange     '15.0.27',
+267 silly addNameRange     '15.0.28',
+267 silly addNameRange     '15.0.29',
+267 silly addNameRange     '15.0.30',
+267 silly addNameRange     '15.0.31',
+267 silly addNameRange     '15.0.32',
+267 silly addNameRange     '15.0.33',
+267 silly addNameRange     '15.0.34',
+267 silly addNameRange     '15.0.35',
+267 silly addNameRange     '15.0.36',
+267 silly addNameRange     '15.0.37',
+267 silly addNameRange     '15.0.38',
+267 silly addNameRange     '15.0.39',
+267 silly addNameRange     '15.6.0',
+267 silly addNameRange     '16.0.0',
+267 silly addNameRange     '15.6.1',
+267 silly addNameRange     '16.0.1',
+267 silly addNameRange     '16.0.2',
+267 silly addNameRange     '16.0.3',
+267 silly addNameRange     '16.0.4',
+267 silly addNameRange     '16.0.5',
+267 silly addNameRange     '15.6.2',
+267 silly addNameRange     '16.0.6',
+267 silly addNameRange     '15.6.3',
+267 silly addNameRange     '15.6.4',
+267 silly addNameRange     '16.0.7',
+267 silly addNameRange     '16.0.8',
+267 silly addNameRange     '16.0.9',
+267 silly addNameRange     '16.0.10',
+267 silly addNameRange     '16.0.11',
+267 silly addNameRange     '16.0.12',
+267 silly addNameRange     '16.0.13',
+267 silly addNameRange     '16.0.14',
+267 silly addNameRange     '16.0.15',
+267 silly addNameRange     '16.0.16',
+267 silly addNameRange     '16.0.17',
+267 silly addNameRange     '15.6.5',
+267 silly addNameRange     '16.0.18',
+267 silly addNameRange     '16.0.19',
+267 silly addNameRange     '16.0.20',
+267 silly addNameRange     '15.6.6',
+267 silly addNameRange     '16.0.21',
+267 silly addNameRange     '16.0.22',
+267 silly addNameRange     '16.0.23',
+267 silly addNameRange     '15.6.7',
+267 silly addNameRange     '16.0.24',
+267 silly addNameRange     '16.0.25',
+267 silly addNameRange     '16.0.26',
+267 silly addNameRange     '16.0.27',
+267 silly addNameRange     '16.0.28',
+267 silly addNameRange     '16.0.29',
+267 silly addNameRange     '15.6.8',
+267 silly addNameRange     '15.6.9',
+267 silly addNameRange     '16.0.30',
+267 silly addNameRange     '15.6.10',
+267 silly addNameRange     '16.0.31',
+267 silly addNameRange     '16.0.32',
+267 silly addNameRange     '16.0.33',
+267 silly addNameRange     '16.0.34',
+267 silly addNameRange     '15.6.11',
+267 silly addNameRange     '15.6.12',
+267 silly addNameRange     '16.0.35',
+267 silly addNameRange     '16.0.36',
+267 silly addNameRange     '16.0.37',
+267 silly addNameRange     '15.6.13',
+267 silly addNameRange     '15.6.14',
+267 silly addNameRange     '16.0.38',
+267 silly addNameRange     '16.0.39',
+267 silly addNameRange     '16.0.40',
+267 silly addNameRange     '16.0.41',
+267 silly addNameRange     '16.1.0',
+267 silly addNameRange     '15.6.15',
+267 silly addNameRange     '16.3.0',
+267 silly addNameRange     '16.3.1',
+267 silly addNameRange     '16.3.2',
+267 silly addNameRange     '16.3.3',
+267 silly addNameRange     '16.3.4',
+267 silly addNameRange     '16.3.5',
+267 silly addNameRange     '16.3.6',
+267 silly addNameRange     '16.3.7',
+267 silly addNameRange     '16.3.8',
+267 silly addNameRange     '16.3.9',
+267 silly addNameRange     '16.3.10',
+267 silly addNameRange     '16.3.11',
+267 silly addNameRange     '16.3.12',
+267 silly addNameRange     '16.3.13',
+267 silly addNameRange     '16.3.14',
+267 silly addNameRange     '15.6.16',
+267 silly addNameRange     '16.3.15',
+267 silly addNameRange     '16.3.16',
+267 silly addNameRange     '16.3.17',
+267 silly addNameRange     '16.3.18',
+267 silly addNameRange     '16.4.0',
+267 silly addNameRange     '15.6.17',
+267 silly addNameRange     '16.4.1',
+267 silly addNameRange     '16.4.2',
+267 silly addNameRange     '16.4.3',
+267 silly addNameRange     '15.6.18',
+267 silly addNameRange     '16.4.4',
+267 silly addNameRange     '16.4.5',
+267 silly addNameRange     '16.4.6',
+267 silly addNameRange     '16.4.7',
+267 silly addNameRange     '15.6.19',
+267 silly addNameRange     '16.4.8',
+267 silly addNameRange     '16.4.9',
+267 silly addNameRange     '16.4.10',
+267 silly addNameRange     '16.4.11',
+267 silly addNameRange     '16.4.12',
+267 silly addNameRange     '16.4.13',
+267 silly addNameRange     '16.4.14',
+267 silly addNameRange     '16.4.15',
+267 silly addNameRange     '16.4.16',
+267 silly addNameRange     '16.4.17',
+267 silly addNameRange     '16.4.18',
+267 silly addNameRange     '16.7.0',
+267 silly addNameRange     '16.7.1',
+267 silly addNameRange     '16.7.2',
+267 silly addNameRange     '15.6.20',
+267 silly addNameRange     '16.7.3',
+267 silly addNameRange     '16.7.4',
+267 silly addNameRange     '16.7.5',
+267 silly addNameRange     '16.7.6',
+267 silly addNameRange     '16.7.7',
+267 silly addNameRange     '15.6.21',
+267 silly addNameRange     '16.7.8',
+267 silly addNameRange     '16.7.9',
+267 silly addNameRange     '16.7.10',
+267 silly addNameRange     '16.7.11',
+267 silly addNameRange     '16.7.12',
+267 silly addNameRange     '16.7.13',
+267 silly addNameRange     '16.7.14',
+267 silly addNameRange     '16.7.15',
+267 silly addNameRange     '16.7.16',
+267 silly addNameRange     '16.7.17',
+267 silly addNameRange     '16.7.18',
+267 silly addNameRange     '16.7.19',
+267 silly addNameRange     '16.7.20',
+267 silly addNameRange     '16.7.21',
+267 silly addNameRange     '16.7.22',
+267 silly addNameRange     '16.8.0',
+267 silly addNameRange     '16.8.1',
+267 silly addNameRange     '16.8.2',
+267 silly addNameRange     '16.8.3',
+267 silly addNameRange     '15.6.22',
+267 silly addNameRange     '16.8.4',
+267 silly addNameRange     '16.8.5',
+267 silly addNameRange     '16.8.6',
+267 silly addNameRange     '16.8.7',
+267 silly addNameRange     '16.8.8',
+267 silly addNameRange     '15.6.23',
+267 silly addNameRange     '16.8.9',
+267 silly addNameRange     '16.8.10',
+267 silly addNameRange     '16.8.11',
+267 silly addNameRange     '16.8.12',
+267 silly addNameRange     '16.8.13',
+267 silly addNameRange     '16.8.14',
+267 silly addNameRange     '15.6.24',
+267 silly addNameRange     '16.8.15',
+267 silly addNameRange     '16.8.16',
+267 silly addNameRange     '16.8.17',
+267 silly addNameRange     '16.8.18',
+267 silly addNameRange     '16.8.19',
+267 silly addNameRange     '15.6.25',
+267 silly addNameRange     '16.8.20',
+267 silly addNameRange     '15.6.26',
+267 silly addNameRange     '16.8.21',
+267 silly addNameRange     '16.8.22',
+267 silly addNameRange     '16.8.23',
+267 silly addNameRange     '16.8.24',
+267 silly addNameRange     '15.6.27',
+267 silly addNameRange     '16.8.25',
+267 silly addNameRange     '16.9.0',
+267 silly addNameRange     '16.9.1',
+267 silly addNameRange     '16.9.2',
+267 silly addNameRange     '16.9.3',
+267 silly addNameRange     '16.9.4',
+267 silly addNameRange     '16.9.5',
+267 silly addNameRange     '16.9.6',
+267 silly addNameRange     '16.9.7',
+267 silly addNameRange     '16.9.8',
+267 silly addNameRange     '15.6.28',
+267 silly addNameRange     '16.9.9',
+267 silly addNameRange     '16.9.10',
+267 silly addNameRange     '16.9.11',
+267 silly addNameRange     '16.9.12',
+267 silly addNameRange     '16.9.13',
+267 silly addNameRange     '16.9.14',
+267 silly addNameRange     '16.9.15',
+267 silly addNameRange     '16.9.16',
+267 silly addNameRange     '16.9.17',
+267 silly addNameRange     '16.9.18',
+267 silly addNameRange     '16.9.19',
+267 silly addNameRange     '16.9.20',
+267 silly addNameRange     '16.9.21',
+267 silly addNameRange     '16.9.22',
+267 silly addNameRange     '16.9.23',
+267 silly addNameRange     '16.9.24',
+267 silly addNameRange     '16.9.25',
+267 silly addNameRange     '16.9.26',
+267 silly addNameRange     '16.9.27',
+267 silly addNameRange     '16.9.28',
+267 silly addNameRange     '16.9.29',
+267 silly addNameRange     '16.9.30',
+267 silly addNameRange     '16.9.31',
+267 silly addNameRange     '16.9.32',
+267 silly addNameRange     '16.9.33',
+267 silly addNameRange     '16.9.34',
+267 silly addNameRange     '16.9.35',
+267 silly addNameRange     '16.9.36',
+267 silly addNameRange     '16.9.37',
+267 silly addNameRange     '16.9.38',
+267 silly addNameRange     '16.9.39',
+267 silly addNameRange     '16.9.40',
+267 silly addNameRange     '16.9.41',
+267 silly addNameRange     '16.9.42',
+267 silly addNameRange     '16.9.43',
+267 silly addNameRange     '16.9.44',
+267 silly addNameRange     '16.9.45',
+267 silly addNameRange     '16.9.46',
+267 silly addNameRange     '16.9.47',
+267 silly addNameRange     '16.9.48',
+267 silly addNameRange     '16.9.49',
+267 silly addNameRange     '15.6.29',
+267 silly addNameRange     '16.9.50',
+267 silly addNameRange     '16.9.51',
+267 silly addNameRange     '15.6.30',
+267 silly addNameRange     '16.9.52',
+267 silly addNameRange     '16.9.53',
+267 silly addNameRange     '16.9.54',
+267 silly addNameRange     '16.9.55',
+267 silly addNameRange     '15.6.31',
+267 silly addNameRange     '16.9.56',
+267 silly addNameRange     '16.14.0',
+267 silly addNameRange     '15.7.0',
+267 silly addNameRange     '17.0.0',
+267 silly addNameRange     '16.14.1',
+267 silly addNameRange     '16.14.2',
+267 silly addNameRange     '17.0.1',
+267 silly addNameRange     '16.14.3',
+267 silly addNameRange     '17.0.2',
+267 silly addNameRange     '16.14.4',
+267 silly addNameRange     '17.0.3',
+267 silly addNameRange     '16.14.5',
+267 silly addNameRange     '17.0.4',
+267 silly addNameRange     '17.0.5',
+267 silly addNameRange     '16.14.6',
+267 silly addNameRange     '17.0.6',
+267 silly addNameRange     '16.14.7',
+267 silly addNameRange     '17.0.7',
+267 silly addNameRange     '17.0.8',
+267 silly addNameRange     '16.14.8',
+267 silly addNameRange     '17.0.9',
+267 silly addNameRange     '17.0.10',
+267 silly addNameRange     '17.0.11',
+267 silly addNameRange     '17.0.12',
+267 silly addNameRange     '16.14.9',
+267 silly addNameRange     '17.0.13',
+267 silly addNameRange     '16.14.10',
+267 silly addNameRange     '15.7.1',
+267 silly addNameRange     '17.0.14',
+267 silly addNameRange     '16.14.11',
+267 silly addNameRange     '15.7.2',
+267 silly addNameRange     '17.0.15',
+267 silly addNameRange     '17.0.16',
+267 silly addNameRange     '16.14.12',
+267 silly addNameRange     '15.7.3',
+267 silly addNameRange     '17.0.17',
+267 silly addNameRange     '16.14.13',
+267 silly addNameRange     '17.0.18',
+267 silly addNameRange     '17.0.19',
+267 silly addNameRange     '16.14.14',
+267 silly addNameRange     '17.0.20',
+267 silly addNameRange     '16.14.15',
+267 silly addNameRange     '17.0.21',
+267 silly addNameRange     '17.0.22',
+267 silly addNameRange     '17.0.23',
+267 silly addNameRange     '17.0.24',
+267 silly addNameRange     '17.0.25',
+267 silly addNameRange     '15.7.4',
+267 silly addNameRange     '17.0.26',
+267 silly addNameRange     '17.0.27',
+267 silly addNameRange     '16.14.16',
+267 silly addNameRange     '17.0.28',
+267 silly addNameRange     '17.0.29',
+267 silly addNameRange     '16.14.17',
+267 silly addNameRange     '15.7.5',
+267 silly addNameRange     '17.0.30',
+267 silly addNameRange     '17.0.31',
+267 silly addNameRange     '16.14.18',
+267 silly addNameRange     '16.14.19',
+267 silly addNameRange     '15.7.6',
+267 silly addNameRange     '17.0.32',
+267 silly addNameRange     '17.0.33',
+267 silly addNameRange     '16.14.20',
+267 silly addNameRange     '17.0.34',
+267 silly addNameRange     '17.0.35',
+267 silly addNameRange     '16.14.21',
+267 silly addNameRange     '17.0.36',
+267 silly addNameRange     '17.0.37',
+267 silly addNameRange     '17.0.38',
+267 silly addNameRange     '16.14.22',
+267 silly addNameRange     '17.0.39',
+267 silly addNameRange     '16.14.23',
+267 silly addNameRange     '17.0.40',
+267 silly addNameRange     '16.14.24',
+267 silly addNameRange     '15.7.7',
+267 silly addNameRange     '17.0.41',
+267 silly addNameRange     '17.0.42',
+267 silly addNameRange     '17.0.43',
+267 silly addNameRange     '18.0.0',
+267 silly addNameRange     '17.0.44',
+267 silly addNameRange     '18.0.1',
+267 silly addNameRange     '18.0.2',
+267 silly addNameRange     '18.0.3',
+267 silly addNameRange     '18.0.4',
+267 silly addNameRange     '18.0.5',
+267 silly addNameRange     '16.14.25',
+267 silly addNameRange     '18.0.6',
+267 silly addNameRange     '18.0.7',
+267 silly addNameRange     '18.0.8',
+267 silly addNameRange     '18.0.9',
+267 silly addNameRange     '17.0.45',
+267 silly addNameRange     '16.14.26',
+267 silly addNameRange     '18.0.10',
+267 silly addNameRange     '18.0.11',
+267 silly addNameRange     '18.0.12',
+267 silly addNameRange     '18.0.13',
+267 silly addNameRange     '17.0.46',
+267 silly addNameRange     '16.14.27',
+267 silly addNameRange     '18.0.14',
+267 silly addNameRange     '17.0.47',
+267 silly addNameRange     '16.14.28',
+267 silly addNameRange     '18.0.15',
+267 silly addNameRange     '17.0.48',
+267 silly addNameRange     '16.14.29',
+267 silly addNameRange     '15.7.8',
+267 silly addNameRange     '18.0.16',
+267 silly addNameRange     '16.14.30',
+267 silly addNameRange     '15.7.9',
+267 silly addNameRange     '18.0.17',
+267 silly addNameRange     '18.0.18',
+267 silly addNameRange     '17.0.49',
+267 silly addNameRange     '16.14.31',
+267 silly addNameRange     '18.0.19',
+267 silly addNameRange     '18.0.20',
+267 silly addNameRange     '17.0.50',
+267 silly addNameRange     '16.14.32',
+267 silly addNameRange     '15.7.10',
+267 silly addNameRange     '18.0.21',
+267 silly addNameRange     '18.0.22',
+267 silly addNameRange     '18.0.23',
+267 silly addNameRange     '17.0.51',
+267 silly addNameRange     '16.14.33',
+267 silly addNameRange     '18.0.24',
+267 silly addNameRange     '17.0.52',
+267 silly addNameRange     '16.14.34',
+267 silly addNameRange     '15.7.11',
+267 silly addNameRange     '18.0.25',
+267 silly addNameRange     '18.0.26' ] ]
+268 silly addNamed @types/react@15.7.11
+269 verbose addNamed "15.7.11" is a plain semver version for @types/react
+270 silly addNameRange number 2 { name: '@types/requirejs', range: '>=2.1.28', hasData: true }
+271 silly addNameRange versions [ '@types/requirejs',
+271 silly addNameRange   [ '2.1.13-alpha',
+271 silly addNameRange     '2.1.14-alpha',
+271 silly addNameRange     '2.1.19-alpha',
+271 silly addNameRange     '2.1.20-alpha',
+271 silly addNameRange     '2.1.21-alpha',
+271 silly addNameRange     '2.1.22-alpha',
+271 silly addNameRange     '2.1.23-alpha',
+271 silly addNameRange     '2.1.24-alpha',
+271 silly addNameRange     '2.1.25-alpha',
+271 silly addNameRange     '2.1.26',
+271 silly addNameRange     '2.1.27',
+271 silly addNameRange     '2.1.28',
+271 silly addNameRange     '2.1.29',
+271 silly addNameRange     '2.1.30',
+271 silly addNameRange     '2.1.31',
+271 silly addNameRange     '2.1.32',
+271 silly addNameRange     '2.1.33',
+271 silly addNameRange     '2.1.34' ] ]
+272 silly addNamed @types/requirejs@2.1.34
+273 verbose addNamed "2.1.34" is a plain semver version for @types/requirejs
+274 silly addNameRange number 2 { name: '@types/mousetrap',
+274 silly addNameRange   range: '>=1.5.34 <1.6.0',
+274 silly addNameRange   hasData: true }
+275 silly addNameRange versions [ '@types/mousetrap',
+275 silly addNameRange   [ '1.5.14-alpha',
+275 silly addNameRange     '1.5.15-alpha',
+275 silly addNameRange     '1.5.20-alpha',
+275 silly addNameRange     '1.5.21-alpha',
+275 silly addNameRange     '1.5.22-alpha',
+275 silly addNameRange     '1.5.23-alpha',
+275 silly addNameRange     '1.5.24-alpha',
+275 silly addNameRange     '1.5.25-alpha',
+275 silly addNameRange     '1.5.26-alpha',
+275 silly addNameRange     '1.5.27',
+275 silly addNameRange     '1.5.28',
+275 silly addNameRange     '1.5.29',
+275 silly addNameRange     '1.5.30',
+275 silly addNameRange     '1.5.31',
+275 silly addNameRange     '1.5.32',
+275 silly addNameRange     '1.5.33',
+275 silly addNameRange     '1.5.34',
+275 silly addNameRange     '1.6.0',
+275 silly addNameRange     '1.6.1',
+275 silly addNameRange     '1.6.2',
+275 silly addNameRange     '1.6.3',
+275 silly addNameRange     '1.6.4',
+275 silly addNameRange     '1.6.5',
+275 silly addNameRange     '1.6.6',
+275 silly addNameRange     '1.6.7',
+275 silly addNameRange     '1.6.8',
+275 silly addNameRange     '1.6.9',
+275 silly addNameRange     '1.6.10',
+275 silly addNameRange     '1.6.11' ] ]
+276 silly addNamed @types/mousetrap@1.5.34
+277 verbose addNamed "1.5.34" is a plain semver version for @types/mousetrap
+278 silly addNameRange number 2 { name: '@types/jquery', range: '>=2.0.48', hasData: true }
+279 silly addNameRange versions [ '@types/jquery',
+279 silly addNameRange   [ '1.10.8-alpha',
+279 silly addNameRange     '1.10.14-alpha',
+279 silly addNameRange     '1.10.15-alpha',
+279 silly addNameRange     '1.10.20-alpha',
+279 silly addNameRange     '1.10.21-alpha',
+279 silly addNameRange     '1.10.22-alpha',
+279 silly addNameRange     '1.10.23-alpha',
+279 silly addNameRange     '1.10.24-alpha',
+279 silly addNameRange     '1.10.25-alpha',
+279 silly addNameRange     '1.10.26-alpha',
+279 silly addNameRange     '1.10.27',
+279 silly addNameRange     '1.10.28',
+279 silly addNameRange     '1.10.29',
+279 silly addNameRange     '1.10.30',
+279 silly addNameRange     '1.10.31',
+279 silly addNameRange     '2.0.32',
+279 silly addNameRange     '2.0.33',
+279 silly addNameRange     '2.0.34',
+279 silly addNameRange     '2.0.35',
+279 silly addNameRange     '2.0.36',
+279 silly addNameRange     '2.0.37',
+279 silly addNameRange     '2.0.38',
+279 silly addNameRange     '2.0.39',
+279 silly addNameRange     '2.0.40',
+279 silly addNameRange     '2.0.41',
+279 silly addNameRange     '2.0.42',
+279 silly addNameRange     '2.0.43',
+279 silly addNameRange     '2.0.44',
+279 silly addNameRange     '2.0.45',
+279 silly addNameRange     '2.0.46',
+279 silly addNameRange     '1.10.32',
+279 silly addNameRange     '3.2.0',
+279 silly addNameRange     '2.0.47',
+279 silly addNameRange     '3.2.1',
+279 silly addNameRange     '3.2.2',
+279 silly addNameRange     '3.2.3',
+279 silly addNameRange     '3.2.4',
+279 silly addNameRange     '3.2.5',
+279 silly addNameRange     '2.0.48',
+279 silly addNameRange     '1.10.33',
+279 silly addNameRange     '3.2.6',
+279 silly addNameRange     '3.2.7',
+279 silly addNameRange     '3.2.8',
+279 silly addNameRange     '3.2.9',
+279 silly addNameRange     '3.2.10',
+279 silly addNameRange     '3.2.11',
+279 silly addNameRange     '3.2.12',
+279 silly addNameRange     '3.2.13',
+279 silly addNameRange     '3.2.14',
+279 silly addNameRange     '3.2.15',
+279 silly addNameRange     '3.2.16',
+279 silly addNameRange     '3.2.17',
+279 silly addNameRange     '3.2.18',
+279 silly addNameRange     '3.3.0',
+279 silly addNameRange     '2.0.49',
+279 silly addNameRange     '1.10.34',
+279 silly addNameRange     '3.3.1',
+279 silly addNameRange     '3.3.2',
+279 silly addNameRange     '3.3.3',
+279 silly addNameRange     '3.3.4',
+279 silly addNameRange     '3.3.5',
+279 silly addNameRange     '3.3.6',
+279 silly addNameRange     '3.3.7',
+279 silly addNameRange     '3.3.8',
+279 silly addNameRange     '3.3.9',
+279 silly addNameRange     '3.3.10',
+279 silly addNameRange     '2.0.50',
+279 silly addNameRange     '3.3.11',
+279 silly addNameRange     '2.0.51',
+279 silly addNameRange     '3.3.12',
+279 silly addNameRange     '3.3.13',
+279 silly addNameRange     '3.3.14',
+279 silly addNameRange     '3.3.15',
+279 silly addNameRange     '3.3.16',
+279 silly addNameRange     '3.3.17',
+279 silly addNameRange     '3.3.18',
+279 silly addNameRange     '3.3.19',
+279 silly addNameRange     '3.3.20',
+279 silly addNameRange     '3.3.21',
+279 silly addNameRange     '3.3.22',
+279 silly addNameRange     '3.3.23',
+279 silly addNameRange     '3.3.24',
+279 silly addNameRange     '3.3.25',
+279 silly addNameRange     '3.3.26',
+279 silly addNameRange     '3.3.27',
+279 silly addNameRange     '3.3.28',
+279 silly addNameRange     '1.10.35',
+279 silly addNameRange     '2.0.52',
+279 silly addNameRange     '3.3.29',
+279 silly addNameRange     '2.0.53',
+279 silly addNameRange     '3.3.30',
+279 silly addNameRange     '3.3.31',
+279 silly addNameRange     '2.0.54',
+279 silly addNameRange     '3.3.32',
+279 silly addNameRange     '3.3.33',
+279 silly addNameRange     '3.3.34',
+279 silly addNameRange     '3.3.35',
+279 silly addNameRange     '3.3.36',
+279 silly addNameRange     '3.3.37',
+279 silly addNameRange     '3.3.38',
+279 silly addNameRange     '3.5.0',
+279 silly addNameRange     '3.5.1',
+279 silly addNameRange     '2.0.55',
+279 silly addNameRange     '1.10.36',
+279 silly addNameRange     '3.5.2',
+279 silly addNameRange     '2.0.56',
+279 silly addNameRange     '3.5.3',
+279 silly addNameRange     '3.5.4',
+279 silly addNameRange     '3.5.5',
+279 silly addNameRange     '3.5.6',
+279 silly addNameRange     '2.0.57',
+279 silly addNameRange     '1.10.37',
+279 silly addNameRange     '3.5.7',
+279 silly addNameRange     '3.5.8',
+279 silly addNameRange     '3.5.9',
+279 silly addNameRange     '3.5.10',
+279 silly addNameRange     '3.5.11',
+279 silly addNameRange     '2.0.58',
+279 silly addNameRange     '1.10.38',
+279 silly addNameRange     '3.5.12',
+279 silly addNameRange     '2.0.59',
+279 silly addNameRange     '3.5.13',
+279 silly addNameRange     '2.0.60',
+279 silly addNameRange     '1.10.39',
+279 silly addNameRange     '3.5.14',
+279 silly addNameRange     '3.5.15',
+279 silly addNameRange     '3.5.16' ] ]
+280 silly addNamed @types/jquery@3.5.16
+281 verbose addNamed "3.5.16" is a plain semver version for @types/jquery
+282 silly cache afterAdd @types/react@15.7.11
+283 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\react\15.7.11\package\package.json not in flight; writing
+284 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+285 silly cache afterAdd @types/q@0.0.32
+286 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\q\0.0.32\package\package.json not in flight; writing
+287 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+288 silly cache afterAdd @types/requirejs@2.1.34
+289 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\requirejs\2.1.34\package\package.json not in flight; writing
+290 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+291 silly cache afterAdd @types/mousetrap@1.5.34
+292 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\mousetrap\1.5.34\package\package.json not in flight; writing
+293 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+294 silly cache afterAdd @types/jquery@3.5.16
+295 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jquery\3.5.16\package\package.json not in flight; writing
+296 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+297 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\react\15.7.11\package\package.json written
+298 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\requirejs\2.1.34\package\package.json written
+299 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\q\0.0.32\package\package.json written
+300 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\mousetrap\1.5.34\package\package.json written
+301 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jquery\3.5.16\package\package.json written
+302 http 304 https://registry.npmjs.org/@types%2fknockout
+303 verbose headers { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+303 verbose headers   connection: 'keep-alive',
+303 verbose headers   'cf-ray': '7888a840e9070b95-DFW',
+303 verbose headers   'cache-control': 'public, max-age=300',
+303 verbose headers   etag: '"d1af3a36a5d6fd71a2249848c9a78269"',
+303 verbose headers   'last-modified': 'Mon, 14 Nov 2022 08:27:51 GMT',
+303 verbose headers   vary: 'Accept-Encoding',
+303 verbose headers   'cf-cache-status': 'REVALIDATED',
+303 verbose headers   'x-amz-replication-status': 'COMPLETED',
+303 verbose headers   server: 'cloudflare' }
+304 silly get cb [ 304,
+304 silly get   { date: 'Thu, 12 Jan 2023 20:31:42 GMT',
+304 silly get     connection: 'keep-alive',
+304 silly get     'cf-ray': '7888a840e9070b95-DFW',
+304 silly get     'cache-control': 'public, max-age=300',
+304 silly get     etag: '"d1af3a36a5d6fd71a2249848c9a78269"',
+304 silly get     'last-modified': 'Mon, 14 Nov 2022 08:27:51 GMT',
+304 silly get     vary: 'Accept-Encoding',
+304 silly get     'cf-cache-status': 'REVALIDATED',
+304 silly get     'x-amz-replication-status': 'COMPLETED',
+304 silly get     server: 'cloudflare' } ]
+305 verbose etag https://registry.npmjs.org/@types%2fknockout from cache
+306 verbose get saving @types/knockout to C:\Users\jesus.dorame\AppData\Roaming\npm-cache\registry.npmjs.org\_40types_252fknockout\.cache.json
+307 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+308 silly addNameRange number 2 { name: '@types/knockout',
+308 silly addNameRange   range: '>=3.4.49 <4.0.0',
+308 silly addNameRange   hasData: true }
+309 silly addNameRange versions [ '@types/knockout',
+309 silly addNameRange   [ '3.2.15-alpha',
+309 silly addNameRange     '3.2.16-alpha',
+309 silly addNameRange     '3.2.21-alpha',
+309 silly addNameRange     '3.2.22-alpha',
+309 silly addNameRange     '3.2.23-alpha',
+309 silly addNameRange     '3.2.24-alpha',
+309 silly addNameRange     '3.2.25-alpha',
+309 silly addNameRange     '3.2.26-alpha',
+309 silly addNameRange     '3.2.27-alpha',
+309 silly addNameRange     '3.2.28-alpha',
+309 silly addNameRange     '3.2.29',
+309 silly addNameRange     '3.2.30',
+309 silly addNameRange     '3.4.31',
+309 silly addNameRange     '3.4.32',
+309 silly addNameRange     '3.4.33',
+309 silly addNameRange     '3.4.34',
+309 silly addNameRange     '3.4.35',
+309 silly addNameRange     '3.4.36',
+309 silly addNameRange     '3.4.37',
+309 silly addNameRange     '3.4.38',
+309 silly addNameRange     '3.4.39',
+309 silly addNameRange     '3.4.40',
+309 silly addNameRange     '3.4.41',
+309 silly addNameRange     '3.4.42',
+309 silly addNameRange     '3.4.43',
+309 silly addNameRange     '3.4.44',
+309 silly addNameRange     '3.4.45',
+309 silly addNameRange     '3.4.46',
+309 silly addNameRange     '3.4.47',
+309 silly addNameRange     '3.4.48',
+309 silly addNameRange     '3.4.49',
+309 silly addNameRange     '3.4.50',
+309 silly addNameRange     '3.4.51',
+309 silly addNameRange     '3.4.52',
+309 silly addNameRange     '3.4.53',
+309 silly addNameRange     '3.4.54',
+309 silly addNameRange     '3.4.55',
+309 silly addNameRange     '3.4.56',
+309 silly addNameRange     '3.4.57',
+309 silly addNameRange     '3.4.58',
+309 silly addNameRange     '3.4.59',
+309 silly addNameRange     '3.4.60',
+309 silly addNameRange     '3.4.61',
+309 silly addNameRange     '3.4.62',
+309 silly addNameRange     '3.4.63',
+309 silly addNameRange     '3.4.64',
+309 silly addNameRange     '3.4.65',
+309 silly addNameRange     '3.4.66',
+309 silly addNameRange     '3.4.67',
+309 silly addNameRange     '3.4.68',
+309 silly addNameRange     '3.4.69',
+309 silly addNameRange     '3.4.70',
+309 silly addNameRange     '3.4.71',
+309 silly addNameRange     '3.4.72' ] ]
+310 silly addNamed @types/knockout@3.4.72
+311 verbose addNamed "3.4.72" is a plain semver version for @types/knockout
+312 silly cache afterAdd @types/knockout@3.4.72
+313 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\knockout\3.4.72\package\package.json not in flight; writing
+314 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+315 verbose afterAdd C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\knockout\3.4.72\package\package.json written
+316 silly install resolved [ { name: '@types/jqueryui',
+316 silly install resolved     version: '1.12.16',
+316 silly install resolved     description: 'TypeScript definitions for jQueryUI',
+316 silly install resolved     homepage: 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jqueryui',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     types: 'index.d.ts',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/DefinitelyTyped/DefinitelyTyped.git',
+316 silly install resolved        directory: 'types/jqueryui' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: { '@types/jquery': '*' },
+316 silly install resolved     typesPublisherContentHash: '753ccd9c06e12d3aa216c5959c1a587fb2666ed87e5b73eb91d7c39a370b39b7',
+316 silly install resolved     typeScriptVersion: '3.6',
+316 silly install resolved     _id: '@types/jqueryui@1.12.16',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-6huAQDpNlso9ayaUT9amBOA3kj02OCeUWs+UvDmbaJmwkHSg/HLsQOoap/D5uveN9ePwl72N45Bl+Frp5xyG1Q==',
+316 silly install resolved        shasum: '9e319f7db39490db950cba77fe83887e0ad3e1d9',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/jqueryui/-/jqueryui-1.12.16.tgz',
+316 silly install resolved        fileCount: 4,
+316 silly install resolved        unpackedSize: 82685,
+316 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5M7CCRA9TVsSAnZWagAAWYwP/3kT+7taBmnJ8Xpjvurc\nTXobGcpb6PFeyttVpvzIjXcJiYKaLl5I6V/LtIO1gF4vRWQGZ+/hQo2i63w2\nMM1Or8TUS8nW7vqo22SsD47JwBwXIPoVShZ5mvO1DDQnWn8yV4uZDSHoDI7F\n4jWELd9vqm8Ti7G5Hh/kugJHXdWZBK2j1TLg2Morn+efdTKG6tkY/eyY1or+\nWqryUKU5kOM3+GNL7oGNH9UQsLWn7P8Ks7gOpBYOZ6i/7KS1W0KHNglEQF4d\ngqWTX+zayQ2e4FzrkxbURGaALXckZUWu8eC9+CiuAlJqqYmMyprbqsyxcy/X\nFsp34GODis24l2uDZNIxTLIfrVU1ibnBsmgz1DsCWnoun4bVbgEqTzy3//d3\n1VT4PPZJoOAwfHyK/KtqwaPorOdFYBI7kEfwUbqRmHwA3n0iNcBfinEyQZ5c\nfDwiUbEtaEiRwl/O95qY093PIgTBkCIWes2ZDcth7aC7WEY34PuIEwapp+p5\n8F7kOlZsQCXZFEXfg2QqhfPVeVpF9G7zL46Ug1owiPrvFdUOhbJbkuvbzKKe\nL2e71704wegUwCUPAEMVNbbS++TV9owF0dhmr+tJNEgI0qmLqHZvwr9wMQn9\nMvwxTd09Y2pT3QIrMsIbjppK4gHMGoZGREgYZD8Mb5n6+t7gKjpwLbwlWGVU\n4K+3\r\n=58rR\r\n-----END PGP SIGNATURE-----\r\n',
+316 silly install resolved        signatures: [Object] },
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     directories: {},
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/jqueryui_1.12.16_1625607874241_0.3125486288851673' },
+316 silly install resolved     _hasShrinkwrap: false,
+316 silly install resolved     _shasum: '9e319f7db39490db950cba77fe83887e0ad3e1d9',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/jqueryui/-/jqueryui-1.12.16.tgz',
+316 silly install resolved     _from: '@types/jqueryui@>=1.11.34',
+316 silly install resolved     bugs: { url: 'https://github.com/DefinitelyTyped/DefinitelyTyped/issues' },
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/react',
+316 silly install resolved     version: '15.7.11',
+316 silly install resolved     description: 'TypeScript definitions for React',
+316 silly install resolved     homepage: 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors:
+316 silly install resolved      [ [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     types: 'index.d.ts',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/DefinitelyTyped/DefinitelyTyped.git',
+316 silly install resolved        directory: 'types/react' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: {},
+316 silly install resolved     typesPublisherContentHash: 'abfdda0f085e7916fc6e6dd1b10f0469af80b2a3635d9cf2fe1cb56da239b9c0',
+316 silly install resolved     typeScriptVersion: '4.1',
+316 silly install resolved     exports:
+316 silly install resolved      { '.': [Object],
+316 silly install resolved        './jsx-runtime': [Object],
+316 silly install resolved        './jsx-dev-runtime': [Object],
+316 silly install resolved        './package.json': './package.json' },
+316 silly install resolved     _id: '@types/react@15.7.11',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-MuwL+2Ki9eWtpsFdGYxMFmUvtXMFt4NgMMKllTF2wdADsKSZEA7LCwIyiQ35KIUb5WgW/ReXHWF/FZ7gn/pNfw==',
+316 silly install resolved        shasum: '9f0ee1308cdcef3afb501f79e99db4269549b8e3',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/react/-/react-15.7.11.tgz',
+316 silly install resolved        fileCount: 7,
+316 silly install resolved        unpackedSize: 183375,
+316 silly install resolved        signatures: [Object],
+316 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjWmyNACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmrl0xAAlV3TSJIreJalVfn6YGzWereO+Vk5orkv2Bg92wM0kdhLysH+\r\n/MHTYAn5qJDR+lrWT+DcBK4lrb8oCGKfl0fkyNdq26sjdmMNTaY/fQZ1ygYR\r\nZoGEn14dXUF4l4Dz2TNAM2Ge8lahVWwH9/4YcMQTZvUWVUfREWFCDnJRr4Pv\r\nA0Mi4jtz1geW+pu8Zst/YAXu3f82Wqbj5AUd1u9kTaS8680qrWG7XFFU1EQS\r\nEv7m9gCkteUshEiI5zogt+rXREax0Gkskcqu8LPLa0F2zs5uKh2vlZMwtVBx\r\nw025I95raNJD20YWrMLtKDr9Zq8xHarNgtxKuck+E4sBZISIRECw0m1mauw2\r\nu9kw27xbQCDd5rpHrtYyAjwo3nF1LWBsV40cgEMbVRXq5VSC2wJYYvHwkSwA\r\n6UWNO6wGk+WGzH5VkUajESUif1FfCubtRAXTyFDak7yhj9RpIA8C3beIYDIo\r\nt2Tp0pNR5FjnuLpSMKxzKJfCWt1ikcxHECQSh/Shxi7AET8eh5nqiEn2imyZ\r\nBlo/bRUOxv9ufRu7FqYkVuiuMsHbGAP7BMxmXUvPRUmWXKHiIFrIM0MqDlrj\r\nv/gXq375fqYYR/azKc2YDubFLTf0sFcyBtGWHN0etsbIRF/udjlctzqlDHdq\r\nIecFT9ihZvtskHOEOKEuA7gLn2iWassLLoU=\r\n=OJLT\r\n-----END PGP SIGNATURE-----\r\n' },
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     directories: {},
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/react_15.7.11_1666870412925_0.7509162907700973' },
+316 silly install resolved     _hasShrinkwrap: false,
+316 silly install resolved     _shasum: '9f0ee1308cdcef3afb501f79e99db4269549b8e3',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/react/-/react-15.7.11.tgz',
+316 silly install resolved     _from: '@types/react@>=15.6.12 <16.0.0',
+316 silly install resolved     bugs: { url: 'https://github.com/DefinitelyTyped/DefinitelyTyped/issues' },
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/requirejs',
+316 silly install resolved     version: '2.1.34',
+316 silly install resolved     description: 'TypeScript definitions for RequireJS',
+316 silly install resolved     homepage: 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/requirejs',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors: [ [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     types: 'index.d.ts',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/DefinitelyTyped/DefinitelyTyped.git',
+316 silly install resolved        directory: 'types/requirejs' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: {},
+316 silly install resolved     typesPublisherContentHash: '8e36236150ac537e4f35e162e4cca2293d0cbac623ced0eee563f9d04f14ad5c',
+316 silly install resolved     typeScriptVersion: '3.7',
+316 silly install resolved     _id: '@types/requirejs@2.1.34',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-iQLGNE1DyIRYih60B47l/hI5X7J0wAnnRBL6Yn85GUYQg8Fm3wl8kvT6NRwncKroUOSx7/lbAagIFNV7y02DiQ==',
+316 silly install resolved        shasum: '819e69701fbadefa53376c4f6f9da726b781e143',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/requirejs/-/requirejs-2.1.34.tgz',
+316 silly install resolved        fileCount: 4,
+316 silly install resolved        unpackedSize: 13823,
+316 silly install resolved        signatures: [Object] },
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     directories: {},
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/requirejs_2.1.34_1634090508733_0.16000829734421673' },
+316 silly install resolved     _hasShrinkwrap: false,
+316 silly install resolved     _shasum: '819e69701fbadefa53376c4f6f9da726b781e143',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/requirejs/-/requirejs-2.1.34.tgz',
+316 silly install resolved     _from: '@types/requirejs@>=2.1.28',
+316 silly install resolved     bugs: { url: 'https://github.com/DefinitelyTyped/DefinitelyTyped/issues' },
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/q',
+316 silly install resolved     version: '0.0.32',
+316 silly install resolved     description: 'TypeScript definitions for Q',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     author:
+316 silly install resolved      { name: 'Barrie Nemetchek',
+316 silly install resolved        email: 'https://github.com/bnemetchek' },
+316 silly install resolved     main: '',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: {},
+316 silly install resolved     peerDependencies: {},
+316 silly install resolved     typings: 'index.d.ts',
+316 silly install resolved     typesPublisherContentHash: '6597b89d57d9ceec9ef1e6af32e2fd02f4582abaf309f8a76f6746ee1af830d5',
+316 silly install resolved     _id: '@types/q@0.0.32',
+316 silly install resolved     dist:
+316 silly install resolved      { shasum: 'bd284e57c84f1325da702babfc82a5328190c0c5',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/q/-/q-0.0.32.tgz',
+316 silly install resolved        integrity: 'sha512-qYi3YV9inU/REEfxwVcGZzbS3KG/Xs90lv0Pr+lDtuVjBPGd1A+eciXzVSaRvLify132BfcvhvEjeVahrUl0Ug==',
+316 silly install resolved        signatures: [Object] },
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+316 silly install resolved        tmp: 'tmp/q-0.0.32.tgz_1475701264683_0.48870944301597774' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _shasum: 'bd284e57c84f1325da702babfc82a5328190c0c5',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/q/-/q-0.0.32.tgz',
+316 silly install resolved     _from: '@types/q@0.0.32',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/mousetrap',
+316 silly install resolved     version: '1.5.34',
+316 silly install resolved     description: 'TypeScript definitions for Mousetrap',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors: [ [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: {},
+316 silly install resolved     peerDependencies: {},
+316 silly install resolved     typesPublisherContentHash: '3a15af72b66e85f1abe0e0d8f39a3a0194441edad7ae395342476a7b3753e699',
+316 silly install resolved     typeScriptVersion: '2.3',
+316 silly install resolved     _id: '@types/mousetrap@1.5.34',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-a2yhRIADupQfOFM75v7GfcQQLUxU705+i/xcZ3N/3PK3Xdo31SUfuCUByWPGOHB1e38m7MxTx/D8FPVsJXZKJw==',
+316 silly install resolved        shasum: '22b338d9c4bcdfd8f81c30684aefeb04a4727168',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/mousetrap/-/mousetrap-1.5.34.tgz',
+316 silly install resolved        signatures: [Object] },
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/mousetrap-1.5.34.tgz_1497557806987_0.07925761374644935' },
+316 silly install resolved     directories: {},
+316 silly install resolved     _shasum: '22b338d9c4bcdfd8f81c30684aefeb04a4727168',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/mousetrap/-/mousetrap-1.5.34.tgz',
+316 silly install resolved     _from: '@types/mousetrap@>=1.5.34 <1.6.0',
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/jquery',
+316 silly install resolved     version: '3.5.16',
+316 silly install resolved     description: 'TypeScript definitions for jquery',
+316 silly install resolved     homepage: 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jquery',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors:
+316 silly install resolved      [ [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     types: 'index.d.ts',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/DefinitelyTyped/DefinitelyTyped.git',
+316 silly install resolved        directory: 'types/jquery' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: { '@types/sizzle': '*' },
+316 silly install resolved     typesPublisherContentHash: '7923f2efc7a0ecc41cc3b3587756b1fa3918d741e8e8782f9988e908d19a0b66',
+316 silly install resolved     typeScriptVersion: '4.2',
+316 silly install resolved     _id: '@types/jquery@3.5.16',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-bsI7y4ZgeMkmpG9OM710RRzDFp+w4P1RGiIt30C1mSBT+ExCleeh4HObwgArnDFELmRrOpXgSYN9VF1hj+f1lw==',
+316 silly install resolved        shasum: '632131baf30951915b0317d48c98e9890bdf051d',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/jquery/-/jquery-3.5.16.tgz',
+316 silly install resolved        fileCount: 11,
+316 silly install resolved        unpackedSize: 1109513,
+316 silly install resolved        signatures: [Object],
+316 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjsAjYACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrjRg//ZUP3FcoE4PYQmfwd0APVAnbvJ/AI0DwBmHVlWDOFZcegz02S\r\njp+LyAMD99Z1JP+V9nnnlo9kjMT6mXVNzLCmxv/BDlvDwGggq3xuqLHkFETn\r\nLuFOAGkENHSoe5C74x2Wp6HZzmhOKJ5mfB2E20P+2esYiTAM3hqYyPM69UCa\r\nxajrGjaMsaUYAiHWjjPfdsgrUCl+bW6GOfrIJ5khOj84hG2ini5I3lILMMAE\r\nJ1ao49TR1/xpDG/mlDQodzbO4nGyada4DyjMP1hVi9ji0piLpr2MSN5vIzSj\r\npSCWyPvwSR1iqQZ5WRfB0e2dcTaJ6diCO/Kf0GlgxuqON0G4i7txQ5F+0u+P\r\np58ObCPmjAToVVBy6feNcn9PosBJnuWHiT+7dN6Sl9BIoh6VZK6DetcI53uF\r\ndqcQH4jazaTZWK7KV0eiXZA+mY+9eNMbqva7S9DKgdh7D+PXsVWwwsDin+TE\r\nrjQnkX8FDrAHm5xS9lxU2hCDt6Pf6AJlrrfhlxlAKlFC3YdCLzyFIWm5r8gS\r\nVquYZQT2TG/8/NEdsdprEjvQ1Z5CnPouKfM0e58OsNzrrhu8zOIwFB1gE7dW\r\nvALz1EXlGrtjf4CM13CUoOgF9V/yothmaRnJ4lZkJWx5uYH4QR2GKJX+VIR2\r\naX24c0Ya5xpeVmz9qIDMw8YceNQCnuXkFWs=\r\n=e9lM\r\n-----END PGP SIGNATURE-----\r\n' },
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     directories: {},
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/jquery_3.5.16_1672480983978_0.3087089557800178' },
+316 silly install resolved     _hasShrinkwrap: false,
+316 silly install resolved     _shasum: '632131baf30951915b0317d48c98e9890bdf051d',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/jquery/-/jquery-3.5.16.tgz',
+316 silly install resolved     _from: '@types/jquery@>=2.0.48',
+316 silly install resolved     bugs: { url: 'https://github.com/DefinitelyTyped/DefinitelyTyped/issues' },
+316 silly install resolved     readme: 'ERROR: No README data found!' },
+316 silly install resolved   { name: '@types/knockout',
+316 silly install resolved     version: '3.4.72',
+316 silly install resolved     description: 'TypeScript definitions for Knockout',
+316 silly install resolved     homepage: 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/knockout',
+316 silly install resolved     license: 'MIT',
+316 silly install resolved     contributors:
+316 silly install resolved      [ [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object],
+316 silly install resolved        [Object] ],
+316 silly install resolved     main: '',
+316 silly install resolved     types: 'index.d.ts',
+316 silly install resolved     repository:
+316 silly install resolved      { type: 'git',
+316 silly install resolved        url: 'git+https://github.com/DefinitelyTyped/DefinitelyTyped.git',
+316 silly install resolved        directory: 'types/knockout' },
+316 silly install resolved     scripts: {},
+316 silly install resolved     dependencies: {},
+316 silly install resolved     typesPublisherContentHash: '04ddf0f386e8aae14a3cb5f4cd3bce06a1a162877581435e9d6cc60559e694e8',
+316 silly install resolved     typeScriptVersion: '4.0',
+316 silly install resolved     _id: '@types/knockout@3.4.72',
+316 silly install resolved     dist:
+316 silly install resolved      { integrity: 'sha512-L/dGG0DdadKj0nsumdvkNonEcHMRe4RflgHEoHFzj1RZ+xuUMayF7+4Jj5pALOD462M/x4cGa9GuadBDiU6nRw==',
+316 silly install resolved        shasum: 'd4e1232d56de228347823ee8f6df6ae7a60b050e',
+316 silly install resolved        tarball: 'https://registry.npmjs.org/@types/knockout/-/knockout-3.4.72.tgz',
+316 silly install resolved        fileCount: 5,
+316 silly install resolved        unpackedSize: 47993,
+316 silly install resolved        signatures: [Object],
+316 silly install resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJisfKZACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmojFhAAhCaSE17xVYrxVHmX6cUd2DsVc27WNEcdpY8riQq+liFM4iuJ\r\ncm5h4oMEIsh+KFcyeQUGmQ7H72MAwpmrhilyW/MVmuGbJzAZatRB6i4fDj//\r\nbZtcOlCNnSyMjycFXHCDpvuGi4qoDE4JnmFwRN8PWD0kqY0nRlgAlVnVIdRt\r\ngu5ojP/OYNTj2xAFUpQOrPO71qwSEkJpZzK7Da0F/YX0w9+gawjROQxerQ+m\r\ncVivAe9RwZtiYB+gT5wPu48b/3j4SId4x+HaFdORTWmU6qForSk4DLLO2TsM\r\nvxB8mggDyrryt7rbevK6xZVjU6o1gffmRvVjnFrsj4r/T0jjvYWeKJQkSwoh\r\nILnI8BW2JjoXnr1zstZ2/9cJ7DgxK/1hwihNNGm4BRJO2M8AzBocNYehb+2H\r\nPQLdayCzI64LGHRYck9R4D6+c4XQd0WLpS8r02ZOvks2XRNL9Y7xOmcVg+Ka\r\nRCrjFgD0Zbu8vtCVgQsFE8rQXsdDLuSiDv0IHcEIM9MwcKrLACf9m6iJ3oNV\r\nlORfOqe1p+HQIv3rVJpClF/dIO/422Sshbh3jNHHpGJy0VeY9uNJe2T3EZj1\r\nABbwIK9dTOFYc0CD7C7v9BlSiATjjcE5t1vYqLCyXasPOPCka7byIWUvcunG\r\n21dnv+hiY0e/kPrg+zLbkALAXCq+BDJclN4=\r\n=ZS+4\r\n-----END PGP SIGNATURE-----\r\n' },
+316 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+316 silly install resolved     directories: {},
+316 silly install resolved     maintainers: [ [Object] ],
+316 silly install resolved     _npmOperationalInternal:
+316 silly install resolved      { host: 's3://npm-registry-packages',
+316 silly install resolved        tmp: 'tmp/knockout_3.4.72_1655829145305_0.8229514894244296' },
+316 silly install resolved     _hasShrinkwrap: false,
+316 silly install resolved     _shasum: 'd4e1232d56de228347823ee8f6df6ae7a60b050e',
+316 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/knockout/-/knockout-3.4.72.tgz',
+316 silly install resolved     _from: '@types/knockout@>=3.4.49 <4.0.0',
+316 silly install resolved     bugs: { url: 'https://github.com/DefinitelyTyped/DefinitelyTyped/issues' },
+316 silly install resolved     readme: 'ERROR: No README data found!' } ]
+317 info install @types/jqueryui@1.12.16 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+318 info install @types/react@15.7.11 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+319 info install @types/requirejs@2.1.34 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+320 info install @types/q@0.0.32 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+321 info install @types/mousetrap@1.5.34 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+322 info install @types/jquery@3.5.16 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+323 info install @types/knockout@3.4.72 into C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+324 info installOne @types/jqueryui@1.12.16
+325 verbose installOne of @types/jqueryui to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+326 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+327 info installOne @types/react@15.7.11
+328 verbose installOne of @types/react to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+329 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+330 info installOne @types/requirejs@2.1.34
+331 verbose installOne of @types/requirejs to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+332 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+333 info installOne @types/q@0.0.32
+334 verbose installOne of @types/q to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+335 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+336 info installOne @types/mousetrap@1.5.34
+337 verbose installOne of @types/mousetrap to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+338 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+339 info installOne @types/jquery@3.5.16
+340 verbose installOne of @types/jquery to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+341 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+342 info installOne @types/knockout@3.4.72
+343 verbose installOne of @types/knockout to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk not in flight; installing
+344 verbose correctMkdir C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+345 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-requirejs-ebfb51520bcecca2.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+346 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-jqueryui-8fa377fb2375d95c.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+347 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-react-15a55f3afc71fb3d.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+348 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-q-cd5e3f5cc4e5475f.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+349 silly install write writing @types/requirejs 2.1.34 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+350 silly install write writing @types/jqueryui 1.12.16 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+351 silly install write writing @types/react 15.7.11 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+352 silly install write writing @types/q 0.0.32 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+353 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-jquery-36e826b829d41c32.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+354 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-knockout-489d27bed956bd08.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+355 verbose lock using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-mousetrap-38ce6f1265845379.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+356 silly install write writing @types/jquery 3.5.16 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+357 silly install write writing @types/mousetrap 1.5.34 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+358 silly install write writing @types/knockout 3.4.72 to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+359 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\react
+360 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\q
+361 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+362 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+363 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react is being purged from base C:\Proyectos\miplugin\my-first-extension
+364 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+365 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q is being purged from base C:\Proyectos\miplugin\my-first-extension
+366 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+367 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs is being purged from base C:\Proyectos\miplugin\my-first-extension
+368 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+369 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+370 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\react\15.7.11\package.tgz
+371 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+372 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react is being purged
+373 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+374 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+375 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui is being purged from base C:\Proyectos\miplugin\my-first-extension
+376 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+377 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\q\0.0.32\package.tgz
+378 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+379 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q is being purged
+380 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+381 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\requirejs\2.1.34\package.tgz
+382 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+383 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs is being purged
+384 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+385 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+386 silly gunzTarPerm modes [ '777', '666' ]
+387 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jqueryui\1.12.16\package.tgz
+388 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+389 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui is being purged
+390 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+391 silly gunzTarPerm modes [ '777', '666' ]
+392 silly gunzTarPerm modes [ '777', '666' ]
+393 silly gunzTarPerm modes [ '777', '666' ]
+394 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery is being purged from base C:\Proyectos\miplugin\my-first-extension
+395 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+396 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap is being purged from base C:\Proyectos\miplugin\my-first-extension
+397 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+398 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout is being purged from base C:\Proyectos\miplugin\my-first-extension
+399 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+400 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\jquery\3.5.16\package.tgz
+401 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+402 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery is being purged
+403 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+404 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\mousetrap\1.5.34\package.tgz
+405 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+406 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap is being purged
+407 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+408 verbose tar unpack C:\Users\jesus.dorame\AppData\Roaming\npm-cache\@types\knockout\3.4.72\package.tgz
+409 verbose tar unpacking to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+410 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout is being purged
+411 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+412 silly gunzTarPerm modes [ '777', '666' ]
+413 silly gunzTarPerm modes [ '777', '666' ]
+414 silly gunzTarPerm modes [ '777', '666' ]
+415 silly gunzTarPerm extractEntry LICENSE
+416 silly gunzTarPerm extractEntry
+417 silly gunzTarPerm extractEntry README.md
+418 silly gunzTarPerm extractEntry LICENSE
+419 silly gunzTarPerm extractEntry LICENSE
+420 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+421 silly gunzTarPerm extractEntry
+422 silly gunzTarPerm extractEntry
+423 silly gunzTarPerm extractEntry
+424 silly gunzTarPerm extractEntry
+425 silly gunzTarPerm extractEntry
+426 silly gunzTarPerm extractEntry README.md
+427 silly gunzTarPerm extractEntry index.d.ts
+428 silly gunzTarPerm extractEntry README.md
+429 silly gunzTarPerm extractEntry index.d.ts
+430 silly gunzTarPerm extractEntry index.d.ts
+431 silly gunzTarPerm extractEntry package.json
+432 silly gunzTarPerm extractEntry types-metadata.json
+433 silly gunzTarPerm extractEntry README.md
+434 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+435 silly gunzTarPerm extractEntry index.d.ts
+436 silly gunzTarPerm modified mode [ 'index.d.ts', 420, 438 ]
+437 silly gunzTarPerm extractEntry
+438 silly gunzTarPerm extractEntry
+439 silly gunzTarPerm extractEntry
+440 silly gunzTarPerm extractEntry
+441 silly gunzTarPerm extractEntry
+442 silly gunzTarPerm extractEntry package.json
+443 silly gunzTarPerm extractEntry
+444 silly gunzTarPerm extractEntry package.json
+445 silly gunzTarPerm extractEntry package.json
+446 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+447 silly gunzTarPerm extractEntry
+448 silly gunzTarPerm extractEntry
+449 silly gunzTarPerm extractEntry
+450 silly gunzTarPerm extractEntry
+451 silly gunzTarPerm extractEntry
+452 silly gunzTarPerm extractEntry
+453 silly gunzTarPerm extractEntry
+454 silly gunzTarPerm extractEntry
+455 verbose write writing to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap\package.json
+456 verbose write writing to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q\package.json
+457 silly gunzTarPerm extractEntry
+458 verbose write writing to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs\package.json
+459 silly gunzTarPerm extractEntry
+460 info preinstall @types/mousetrap@1.5.34
+461 info preinstall @types/q@0.0.32
+462 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap\package.json
+463 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q\package.json
+464 info preinstall @types/requirejs@2.1.34
+465 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-knockout-489d27bed956bd08.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+466 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs\package.json
+467 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap\package.json
+468 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q\package.json
+469 verbose write writing to C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui\package.json
+470 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs\package.json
+471 silly install resolved []
+472 verbose about to build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+473 info build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+474 silly install resolved []
+475 verbose about to build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+476 info build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+477 info preinstall @types/jqueryui@1.12.16
+478 info linkStuff @types/mousetrap@1.5.34
+479 silly linkStuff @types/mousetrap@1.5.34 has C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules as its parent node_modules
+480 silly install resolved []
+481 verbose about to build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+482 info build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+483 info linkStuff @types/q@0.0.32
+484 silly linkStuff @types/q@0.0.32 has C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules as its parent node_modules
+485 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui\package.json
+486 info linkStuff @types/requirejs@2.1.34
+487 silly linkStuff @types/requirejs@2.1.34 has C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules as its parent node_modules
+488 verbose linkBins @types/mousetrap@1.5.34
+489 verbose linkMans @types/mousetrap@1.5.34
+490 verbose rebuildBundles @types/mousetrap@1.5.34
+491 info install @types/mousetrap@1.5.34
+492 verbose linkBins @types/q@0.0.32
+493 verbose linkMans @types/q@0.0.32
+494 verbose rebuildBundles @types/q@0.0.32
+495 verbose readDependencies loading dependencies from C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui\package.json
+496 info install @types/q@0.0.32
+497 info postinstall @types/mousetrap@1.5.34
+498 verbose linkBins @types/requirejs@2.1.34
+499 verbose linkMans @types/requirejs@2.1.34
+500 verbose rebuildBundles @types/requirejs@2.1.34
+501 info postinstall @types/q@0.0.32
+502 info install @types/requirejs@2.1.34
+503 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-mousetrap-38ce6f1265845379.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\mousetrap
+504 info postinstall @types/requirejs@2.1.34
+505 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-q-cd5e3f5cc4e5475f.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\q
+506 silly install resolved []
+507 verbose about to build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+508 info build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+509 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-react-15a55f3afc71fb3d.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+510 silly gunzTarPerm extractEntry
+511 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-requirejs-ebfb51520bcecca2.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\requirejs
+512 info linkStuff @types/jqueryui@1.12.16
+513 silly linkStuff @types/jqueryui@1.12.16 has C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules as its parent node_modules
+514 verbose linkBins @types/jqueryui@1.12.16
+515 verbose linkMans @types/jqueryui@1.12.16
+516 verbose rebuildBundles @types/jqueryui@1.12.16
+517 info install @types/jqueryui@1.12.16
+518 info postinstall @types/jqueryui@1.12.16
+519 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-jqueryui-8fa377fb2375d95c.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jqueryui
+520 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\types-jquery-36e826b829d41c32.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+521 verbose about to build C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+522 verbose unlock done using C:\Users\jesus.dorame\AppData\Roaming\npm-cache\_locks\vss-web-extension-sdk-568447e7fd3d8948.lock for C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+523 verbose stack Error: ENOENT: no such file or directory, open 'C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout\package.json'
+523 verbose stack     at Error (native)
+524 verbose cwd C:\Proyectos\miplugin\my-first-extension
+525 error Windows_NT 10.0.19044
+526 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "vss-web-extension-sdk" "--save"
+527 error node v4.4.2
+528 error npm  v2.15.0
+529 error path C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout\package.json
+530 error code ENOENT
+531 error errno -4058
+532 error syscall open
+533 error enoent ENOENT: no such file or directory, open 'C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout\package.json'
+533 error enoent This is most likely not a problem with npm itself
+533 error enoent and is related to npm not being able to find a file.
+534 verbose exit [ -4058, true ]
+535 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+536 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout is being purged from base C:\Proyectos\miplugin\my-first-extension
+537 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+538 silly vacuum-fs purging C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\knockout
+539 silly vacuum-fs quitting because other entries in C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types
+540 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\react
+541 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react is being purged from base C:\Proyectos\miplugin\my-first-extension
+542 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+543 silly vacuum-fs purging C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\react
+544 silly vacuum-fs quitting because other entries in C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types
+545 verbose unbuild node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+546 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery is being purged from base C:\Proyectos\miplugin\my-first-extension
+547 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+548 silly vacuum-fs purging C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types\jquery
+549 silly vacuum-fs quitting because other entries in C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk\node_modules\@types
+550 verbose unbuild node_modules\vss-web-extension-sdk
+551 info preuninstall vss-web-extension-sdk@5.141.0
+552 info uninstall vss-web-extension-sdk@5.141.0
+553 verbose unbuild rmStuff vss-web-extension-sdk@5.141.0 from C:\Proyectos\miplugin\my-first-extension\node_modules
+554 info postuninstall vss-web-extension-sdk@5.141.0
+555 silly gentlyRm C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk is being purged from base C:\Proyectos\miplugin\my-first-extension
+556 verbose gentlyRm don't care about contents; nuking C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+557 silly vacuum-fs purging C:\Proyectos\miplugin\my-first-extension\node_modules\vss-web-extension-sdk
+558 silly vacuum-fs removing C:\Proyectos\miplugin\my-first-extension\node_modules
+559 silly vacuum-fs finished vacuuming up to C:\Proyectos\miplugin\my-first-extension
